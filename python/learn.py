@@ -14,7 +14,7 @@ ctor = DecisionTreeClassifier
 # ctor = LogisticRegression
 # ctor = KNeighborsClassifier
 
-tbl = pd.read_csv("train.csv")
+tbl = pd.read_csv("python/train.csv")
 tbl.fillna(0, inplace=True)
 
 X = tbl.drop(
