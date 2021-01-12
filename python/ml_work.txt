@@ -1,0 +1,29 @@
+
+
+
+Take the generic example called learn.py from my github repo:
+	http://github.com/veltzer/demos-ml-python
+
+Remove column by column from the data and rerun.
+At first iteration remove one column
+At second iteration remove two column...
+...
+
+What do you guess will happen to our success of prediction?
+
+Is this way of ranking the "importance" of columns fail safe?
+	Think about it.
+
+Now at every iteration remove just one column
+At first iteration remove column 0 only
+At second iteration remove column 1 only
+....
+
+And again, at every iteration record our success rate.
+
+This is an alternative way of estimating the "importance" of each column for predicting the result.
+
+Did the ways of estimation agree? If yes - Why? if no -> Why?
+
+Notes:
+* Never remove the Survive column.

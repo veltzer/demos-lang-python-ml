@@ -11,6 +11,9 @@ import numpy.random
 
 from sklearn.model_selection import train_test_split
 
+random.seed(0)
+numpy.random.seed(0)
+
 ctor = DecisionTreeClassifier
 
 tbl = pd.read_csv("data.csv")

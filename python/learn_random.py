@@ -16,6 +16,9 @@ ctor = DecisionTreeClassifier
 tbl = pd.read_csv("data.csv")
 tbl.fillna(0, inplace=True)
 
+tbl = tbl.drop(["Survived"], axis=1,)
+tbl['Survived'] = numpy.random.choice([0, 1], tbl.shape[0])
+
 X = tbl.drop(["Survived"], axis=1,)
 Y = tbl[["Survived"]]
 
