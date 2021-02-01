@@ -1,0 +1,8 @@
+1) Take the titanic data from my git repo:
+	https://github.com/veltzer/demos-ml-python/python
+	And the basic "learn.py" script.
+2) Record your current accuracy rate.
+3) Engineer two new features to try and help the DecisionTreeClassifier
+4) What can you say about your features? Which helped? Which didn't? Why?
+
+Bonus score for the highest accuracy in the class.
