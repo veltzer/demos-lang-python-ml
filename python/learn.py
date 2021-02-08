@@ -11,7 +11,6 @@ import numpy.random
 
 from sklearn.model_selection import train_test_split
 
-ctor = DecisionTreeClassifier
 
 tbl = pd.read_csv("data.csv")
 tbl.fillna(0, inplace=True)
@@ -25,8 +24,10 @@ Y = pd.get_dummies(Y)
 # split the data to train and test
 X_train, X_test, y_train, y_test = train_test_split(X, Y)
 
-alg = ctor()
+alg = DecisionTreeClassifier(max_depth=18)
 alg.fit(X_train, y_train)
 
 score = alg.score(X_test, y_test)
-print("overall score", score)
+score_train = alg.score(X_train, y_train)
+print(f"test score {score}")
+print(f"train score {score_train}")
