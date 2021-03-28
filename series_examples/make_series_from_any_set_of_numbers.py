@@ -7,4 +7,4 @@ def fun(x):
 
 
 for i in range(1,4):
-    print(f"{fun(i)}")
+    print(f"{int(fun(i))}")
