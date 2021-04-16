@@ -1,0 +1,10 @@
+
+
+The purpose of this exercise is to play around with pandas
+
+- Load the data into pandas table (data.csv that was sent in the chat)
+- Show information about the table.
+- Show the types of the various columns.
+- How did pandas decide which type to use for each column?
+
+* https://pandas.pydata.org/docs/reference/index.html
