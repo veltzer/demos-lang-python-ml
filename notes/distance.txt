@@ -1,0 +1,22 @@
+
+
+
+		p = (p1, p2, ... , pn)
+		q = (q1, q2, ... , qn)
+
+		euclydian distance = sqrt ( sigma {i=1..n} (pi-qi)^2 )
+		manhattan distance = sigma {i=1..n} abs (pi-qi) )
+		max distance = max {i=1..n} { abs(pi-qi) }
+
+
+		*
+		*
+		*
+		*
+		********************
+
+		*
+		
+		
+
+		********************
