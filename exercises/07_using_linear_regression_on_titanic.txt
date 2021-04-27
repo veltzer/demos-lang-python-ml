@@ -1,0 +1,9 @@
+
+Solve the titanic problem using linear regression
+
+Points to remember:
+* In order to use linear regression you need all columns to be numeric.
+* Linear regression is an *estimation* algorithm and not a *classification* algorithm.
+* In order for linear reg to be successful you should try to make it so as many columns
+	as possible are linearly correlated with the Y column.
+	So you may need to do some transformations on some of the columns.
