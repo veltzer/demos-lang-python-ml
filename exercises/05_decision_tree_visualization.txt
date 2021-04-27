@@ -1,0 +1,11 @@
+
+
+Assuming you solved the Titanic proglem using a decision tree and got some result.
+
+Visualize the decision tree you got in one of ways in the following blog post:
+	https://mljar.com/blog/visualize-decision-tree/
+
+Look at the decision tree and try to understand how it work, or any other thing about the problem
+that we are trying to learn.
+
+What did you learn? Was the visualization worth it or not? explain...
