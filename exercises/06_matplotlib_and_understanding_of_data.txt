@@ -1,0 +1,7 @@
+
+The problem is the Titanic problem.
+
+Create 2 dimentional plots, one for each of the data columns in the problem.
+In each plot the relevant data column is plotted against the Y colums (the "survived" column).
+
+What can you deduce from these plots, if anything?
