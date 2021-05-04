@@ -10,3 +10,6 @@
 	- colimsn which are not correlated at all are just disturbting the algorithm
 		get rid of them
 	- engineer new features
+
+- solve the Titanic problem using the Naive Bayes Classifier of Scikit-learn
+	Remember to discretize columns and remove un-needed columns.
