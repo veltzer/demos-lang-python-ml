@@ -1,0 +1,12 @@
+
+- solve the feature engineering problem as described in:
+	https://github.com/veltzer/demos-ml-python/blob/master/exercises/02_feature_engineering.txt
+
+- do the matplotlib exercise (redo).
+
+- do the linear regression exercise knowing what were the problems:
+	- columns which are not linearly correlated as bad.
+		either get rid of them or turn them to linear correlation
+	- colimsn which are not correlated at all are just disturbting the algorithm
+		get rid of them
+	- engineer new features
