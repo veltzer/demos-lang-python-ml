@@ -1,0 +1,9 @@
+
+- Study the pearson correlation
+	https://en.wikipedia.org/wiki/Pearson_correlation_coefficient
+- Use the pearson correlation on the titanic data to estimate the correlation
+	between any numeric column in the data to the "Survived" (target) column.
+- Open exercise: write "statistics" code that "investigtes" your data.
+	For instance, for every column, print information like:
+	expected value, standard deviation, number of unique values, median,
+	quantiles, histogram, ...

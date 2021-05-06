@@ -1,0 +1,12 @@
+
+Load a pandas frame and do the following:
+- add a column which has the data in some other column + 1
+- remove a column
+- rename a column
+- remove a row
+- add a row
+- see what type a column is made of
+- change the type of a column (either at runtime or at load time)
+- find the mean, variance and quotiles of a certain column.
+
+and invent other things to do on your own...

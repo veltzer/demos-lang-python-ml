@@ -1,0 +1,6 @@
+
+
+Use Naive Bayes analysis to solve the Mushroom data in Kaggle.
+
+In this database you have various attributes of mushrooms and the column to be predicted
+is whether the mushroom is poisonous or not.

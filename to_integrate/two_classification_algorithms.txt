@@ -1,0 +1,11 @@
+
+
+- read this first:
+	https://stackabuse.com/overview-of-classification-methods-in-python-with-scikit-learn/
+- Go to the documentation of scikit-learn
+- Find a list of all classification algoritms.
+- Choose 2 (better not to choose DecisionTreeClassifier which we have already abused to death)
+- Use those 2 algorithms to solve the Titanic problem.
+- Read the documentation of the algorithms.
+- Try to play with their parameters to improve their performance.
+- *** There is NO NEED to do any feature engineering in this exercise ***
