@@ -1,0 +1,21 @@
+
+
+Give the following python function:
+
+def square(x):
+	return x*x
+
+find the x that generates a minimum for this function
+(I know that you all understand that x=0 is the solution but the idea is to do that with an algorithm
+and not using your brain).
+
+What you produce is a piece of code that follows the newton raphson method
+and finds the x for which square(x) is minimum.
+
+Reminder: the newton-raphson method
+1. guess x
+2. mesure derivitive of x by visition close by points.
+3. if the derivitive is close enough to zero -> stop
+4. if it is not, follow the downward slope of the derivitive
+	and guess a new value for x
+	and return to step 2.
