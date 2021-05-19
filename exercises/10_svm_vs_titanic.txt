@@ -1,0 +1,4 @@
+
+Solve the titanic problem with svm.
+
+Compare precision to other algorithms.
