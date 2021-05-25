@@ -1,0 +1,9 @@
+
+
+Use the voting classfier in Scikit-learn to build an ensemble method for the Titanic
+problem with three ml models. Pick any three you want (try to make them as accurate
+as possible).
+
+
+Link:
+https://scikit-learn.org/stable/modules/ensemble.html#voting-classifier
