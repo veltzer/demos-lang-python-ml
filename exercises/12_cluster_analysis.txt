@@ -1,0 +1,15 @@
+
+Cluster the titanic data.
+
+Use the K-Means algorithm from the scikit-learn
+
+You have to do the following things to make the results have meaning...
+- remove un-needed and un-interesting columns (e.g. id)
+- turn everything numerical (with some common sense)
+- normalize the data
+
+And then you just run the k-mean algorithm.
+
+Run the algorithm with different values for the 'n_clusters' parameters
+and find a good value for the number of clusters (hint: 897 is not a good value).
+We want a value between 2 and 15.
