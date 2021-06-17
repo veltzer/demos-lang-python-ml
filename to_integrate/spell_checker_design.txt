@@ -1,0 +1,49 @@
+
+
+
+	nihgt -> 0xABCD
+	inght -> 0xABCE
+
+			night -> mihgt: this is not common
+			night -> nihgt: this is very cmmon
+			1. forget a letter
+				ight nght niht nigt
+			2. switch two letters
+				inght ngiht nihgt nigth
+			3. double a letter
+				nnight niight nigght nighht nightt
+			4. hit a close letter instead of the right onw
+				might bight nught noght ....
+			5. adding a letter which has nothing to do with the word
+				nights nightt nightd
+
+
+	night in the dictionary is "ghint"
+		ight -> ghit
+
+
+	we have an english dictionary with say 150,000 words
+	we take every word in that dictionary (e.g. "night")
+	and we put every word that is created from that word by dropping a letter
+	and put it back into the dictionary
+	average length of a word is about 5 characters
+
+	night -> THIS IS WORD IN THE ENGLISH DICTIONARY
+	ight ->
+		I am not a word in the english dictionary. my real word is "night"
+	nght ->
+		I am not a word in the english dictionary. my real word is "night"
+	niht ->
+		I am not a word in the english dictionary. my real word is "night"
+	nigt ->
+		I am not a word in the english dictionary. my real word is "night"
+	nigh ->
+		I am not a word in the english dictionary. my real word is "night"
+	How many words do we have in this new and strange dictionary? 150,000 * 6
+		1,000,000
+		
+
+	The might after tomorrow we have a date
+
+
+	You have a dictionary!!!!
