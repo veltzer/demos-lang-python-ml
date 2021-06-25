@@ -1,0 +1,10 @@
+vendor,price
+low,70000
+verylow,90000
+mercedes,180000
+
+
+vendor_honda,vendor_mazda,vendor_mercedes,price
+1,0,0,70000
+0,1,0,90000
+0,0,1,180000
