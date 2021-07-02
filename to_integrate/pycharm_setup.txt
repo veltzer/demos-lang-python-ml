@@ -1,0 +1,14 @@
+
+
+
+- install pycharm (if you havent already).
+
+- create a new project based on a new virtual env and python3.
+
+- inspect the newly created virtual env using CTRL+SHIFT+A -> python interpreter
+
+- run your first script printing something to the screen in severl different ways:
+	Run menu
+	SHIFT+F10
+	ALT+SHIFT+F10
+	right click -> run

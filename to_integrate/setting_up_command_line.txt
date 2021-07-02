@@ -1,0 +1,21 @@
+
+package name		import name
+numpy			numpy
+pandas			pandas
+matplotlib		matplotlib
+scikit-learn		sklearn
+
+If you can import all the four name above, you are good to go!
+
+virtual environment:
+====================
+- create a virtual environment:
+	virtualenv -p [python_version] [folder]
+- enter a virtual env:
+	source [virtual_env_folder]/bin/activate
+- exit a virtual env:
+	deactivate
+- install a package in a virtualenv
+	first active the virtual env and then
+	$ pip install [package_name]
+	* you must be connected to the internet
