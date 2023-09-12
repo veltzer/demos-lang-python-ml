@@ -4,7 +4,8 @@ make_requires = [
     "pyclassifiers",
 ]
 install_requires = [
-    "sklearn",
+    "scikit-learn",
+    # "sklearn",
     "pandas",
     "numpy",
     "matplotlib",
