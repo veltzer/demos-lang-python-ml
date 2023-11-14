@@ -6,12 +6,12 @@ description: Demos machine learning in the python language
 
 website: https://veltzer.github.io/demos-ml-python
 
-## build
+## Build
 
 ![build](https://github.com/veltzer/demos-ml-python/workflows/build/badge.svg)
 
 
-## contact
+## Contact
 
 chat with me at [![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/veltzer/mark.veltzer)
 
