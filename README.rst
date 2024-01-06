@@ -2,7 +2,7 @@
 *demos-ml-python*
 =================
 
-.. image:: https://img.shields.io/pypi/v/demos-ml-python
+.. image:: https://img.shields.io/pypi/v/demos-python-ml
 
 .. image:: https://img.shields.io/github/license/veltzer/demos-ml-python
 
@@ -14,4 +14,4 @@ author: Mark Veltzer
 
 version: 0.0.1
 
-	Mark Veltzer <mark.veltzer@gmail.com>, Copyright © 2019, 2020, 2021, 2022, 2023
+	Mark Veltzer <mark.veltzer@gmail.com>, Copyright © 2019, 2020, 2021, 2022, 2023, 2024
