@@ -1,14 +1,14 @@
 =================
-*demos-ml-python*
+*demos-python-ml*
 =================
 
 .. image:: https://img.shields.io/pypi/v/demos-python-ml
 
-.. image:: https://img.shields.io/github/license/veltzer/demos-ml-python
+.. image:: https://img.shields.io/github/license/veltzer/demos-python-ml
 
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
 
-project website: https://veltzer.github.io/demos-ml-python
+project website: https://veltzer.github.io/demos-python-ml
 
 author: Mark Veltzer
 

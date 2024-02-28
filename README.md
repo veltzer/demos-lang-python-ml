@@ -1,14 +1,14 @@
-## demos-ml-python
+## demos-python-ml
 
 version: 0.0.1
 
 description: Demos machine learning in the python language
 
-website: https://veltzer.github.io/demos-ml-python
+website: https://veltzer.github.io/demos-python-ml
 
 ## Build
 
-![build](https://github.com/veltzer/demos-ml-python/workflows/build/badge.svg)
+![build](https://github.com/veltzer/demos-python-ml/workflows/build/badge.svg)
 
 
 ## Contact
