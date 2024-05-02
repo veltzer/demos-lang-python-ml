@@ -3,6 +3,7 @@ dev_requires = []
 install_requires = [
     "scikit-learn",
     # "sklearn",
+    "pyarrow",
     "pandas",
     "numpy",
     "matplotlib",
