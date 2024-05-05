@@ -1,5 +1,6 @@
 # THIS IS AN AUTO-GENERATED FILE. DO NOT EDIT!
 scikit-learn
+pyarrow
 pandas
 numpy
 matplotlib
