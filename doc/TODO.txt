@@ -1,0 +1,5 @@
+- add a makefile to this project
+- lint all python files here
+- turn all exercises in .md files
+- syntax check all md files
+- structure check all md files

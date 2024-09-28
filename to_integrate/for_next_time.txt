@@ -1,4 +1,3 @@
-
 - solve the feature engineering problem as described in:
 	https://github.com/veltzer/demos-ml-python/blob/master/exercises/02_feature_engineering.txt
 
