@@ -7,6 +7,9 @@ install_requires = [
     "pandas",
     "numpy",
     "matplotlib",
+    # deep learining
+    "tensorflow",
+    "keras",
 ]
 build_requires = [
     "pymakehelper",
