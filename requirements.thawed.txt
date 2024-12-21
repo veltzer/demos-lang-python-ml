@@ -9,3 +9,12 @@ keras
 pymakehelper
 pydmt
 pyclassifiers
+pylint
+pytest
+pytest-cov
+flake8
+pyflakes
+pycodestyle
+mypy
+types-termcolor
+types-PyYAML
