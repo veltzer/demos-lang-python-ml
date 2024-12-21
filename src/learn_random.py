@@ -1,6 +1,6 @@
-#!/usr/bin/python3
-import pandas as pd
+#!/usr/bin/env python
 
+import pandas as pd
 import random
 
 from sklearn.tree import DecisionTreeClassifier

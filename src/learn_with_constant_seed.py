@@ -1,7 +1,7 @@
-#!/usr/bin/python3
-import pandas as pd
+#!/usr/bin/env python
 
 import random
+import pandas as pd
 
 from sklearn.tree import DecisionTreeClassifier
 # from sklearn.linear_model import LogisticRegression

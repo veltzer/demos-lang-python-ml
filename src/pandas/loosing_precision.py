@@ -1,7 +1,7 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 
 """
-This demos shows the types of columsn in a pandas table...
+This example explores how panda columns lose precision
 """
 
 import pandas
