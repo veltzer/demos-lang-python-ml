@@ -4,6 +4,8 @@ pyarrow
 pandas
 numpy
 matplotlib
+tensorflow
+keras
 pymakehelper
 pydmt
 pyclassifiers
