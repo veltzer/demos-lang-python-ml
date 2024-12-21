@@ -16,5 +16,6 @@ flake8
 pyflakes
 pycodestyle
 mypy
+pycmdtools
 types-termcolor
 types-PyYAML

@@ -24,6 +24,7 @@ test_requires = [
     "pyflakes",
     "pycodestyle",
     "mypy",
+    "pycmdtools",
     # types
     "types-termcolor",
     "types-PyYAML",
