@@ -47,7 +47,7 @@ if f_title:
     titleDictionary = {"Master": "Master", "Miss": "Miss", "Mlle": "Miss", "Mme": "Ms", "Ms": "Ms", "Mr": "Mr",
                        "Countess": "Ms", "Mrs": "Ms", "Jonkheer": "Mr", "Don": "Mr", "Dr": "Mr", "Rev": "Mr", "Lady": "Ms",
                        "Major": "Senior", "Sir": "Senior", "Col": "Senior", "Capt": "Senior"}
-    tbl["Title"] = tbl["Name"].str.extract("([A-Za-z]+)\.", expand=True)
+    tbl["Title"] = tbl["Name"].str.extract(r"([A-Za-z]+)\.", expand=True)
     tbl = tbl.replace({"Title": titleDictionary})
 
 # Fill missing Age based on mean age for each title
