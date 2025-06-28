@@ -1,6 +1,6 @@
-config_requires = []
-dev_requires = []
-install_requires = [
+""" python deps for this project """
+
+install_requires: list[str] = [
     "scikit-learn",
     # "sklearn",
     "pyarrow",
@@ -11,22 +11,19 @@ install_requires = [
     "tensorflow",
     "keras",
 ]
-build_requires = [
-    "pymakehelper",
+build_requires: list[str] = [
     "pydmt",
-    "pyclassifiers",
+    "pymakehelper",
+    "pycmdtools",
 ]
-test_requires = [
+test_requires: list[str] = [
     "pylint",
     "pytest",
     "pytest-cov",
-    "flake8",
-    "pyflakes",
-    "pycodestyle",
     "mypy",
     "pycmdtools",
     # types
     "types-termcolor",
     "types-PyYAML",
 ]
-requires = config_requires + install_requires + build_requires + test_requires
+requires = install_requires + build_requires + test_requires
