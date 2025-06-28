@@ -16,7 +16,7 @@ f_dummies=False
 f_drop=True
 f_nor=False
 f_age=False
-f_fare=False
+f_fare=True  # Enabled for this example
 f_title=False
 f_eng_alone=True
 f_turn_column_sex_into_male_female=True
@@ -44,7 +44,10 @@ else:
 if f_fare:
     pclassFareMean = tbl[tbl["Fare"] > 0].groupby(["Pclass", "Embarked"])["Fare"].mean()
     for item, fare in pclassFareMean.items():
-        tbl.loc[(tbl["Pclass"] == item[0]) & (tbl["Embarked"] == item[1]) & (tbl["Fare"].isnull()), "Fare"] = fare
+        # This 'isinstance' check acts as a type guard for mypy.
+        # It confirms that 'item' is a tuple, making it indexable.
+        if isinstance(item, tuple):
+            tbl.loc[(tbl["Pclass"] == item[0]) & (tbl["Embarked"] == item[1]) & (tbl["Fare"].isnull()), "Fare"] = fare
 
 # Create and reduce Title column
 if f_title:
