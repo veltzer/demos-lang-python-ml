@@ -8,13 +8,11 @@ pandas
 pandas-stubs
 psutil
 pyarrow
-pycmdtools
-pycmdtools
 pydmt
 pylint
 pymakehelper
 pytest
-pytest-cov
+ruff
 scikit-learn
 tensorflow
 types-PyYAML

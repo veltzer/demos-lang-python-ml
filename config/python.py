@@ -16,18 +16,16 @@ install_requires: list[str] = [
 build_requires: list[str] = [
     "pydmt",
     "pymakehelper",
-    "pycmdtools",
 ]
 test_requires: list[str] = [
     "pylint",
     "pytest",
-    "pytest-cov",
     "mypy",
-    "pycmdtools",
+    "ruff",
     # types
     "types-termcolor",
     "types-PyYAML",
-    "pandas-stubs",
     "types-psutil",
+    "pandas-stubs",
 ]
 requires = install_requires + build_requires + test_requires
