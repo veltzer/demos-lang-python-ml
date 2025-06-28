@@ -27,5 +27,7 @@ test_requires: list[str] = [
     # types
     "types-termcolor",
     "types-PyYAML",
+    "pandas-stubs",
+    "types-psutil",
 ]
 requires = install_requires + build_requires + test_requires

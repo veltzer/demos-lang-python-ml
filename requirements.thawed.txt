@@ -5,6 +5,7 @@ matplotlib
 mypy
 numpy
 pandas
+pandas-stubs
 psutil
 pyarrow
 pycmdtools
@@ -17,4 +18,5 @@ pytest-cov
 scikit-learn
 tensorflow
 types-PyYAML
+types-psutil
 types-termcolor

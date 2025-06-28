@@ -16,7 +16,7 @@ if DO:
     tbl = pandas.read_csv("data.csv")
     print(tbl.dtypes)
     print("==========================================")
-    for (columnName, columnData) in tbl.iteritems():
+    for (columnName, columnData) in tbl.items():
         print(f"{columnName} {tbl[columnName].dtype}")
     print(tbl.memory_usage())
     print(sys.getsizeof(tbl))

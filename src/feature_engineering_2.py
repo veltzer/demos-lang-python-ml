@@ -43,7 +43,7 @@ else:
 # Fill missing Fare based on mean ticket price for each Pclass
 if f_fare:
     pclassFareMean = tbl[tbl["Fare"] > 0].groupby(["Pclass", "Embarked"])["Fare"].mean()
-    for item, fare in pclassFareMean.iteritems():
+    for item, fare in pclassFareMean.items():
         tbl.loc[(tbl["Pclass"] == item[0]) & (tbl["Embarked"] == item[1]) & (tbl["Fare"].isnull()), "Fare"] = fare
 
 # Create and reduce Title column
@@ -57,7 +57,7 @@ if f_title:
 # Fill missing Age based on mean age for each title
 if f_age and f_title:
     titleAgeMean = tbl[tbl["Age"] > 0].groupby("Title")["Age"].mean()
-    for title, age in titleAgeMean.iteritems():
+    for title, age in titleAgeMean.items():
         tbl.loc[(tbl["Title"] == title) & (tbl["Age"].isnull()), "Age"] = age
 
 # Add new features IsAlone
