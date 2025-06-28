@@ -1,6 +1,10 @@
 #!/usr/bin/python3
-import pandas as pd
 
+"""
+show the get_dummies method
+"""
+
+import pandas as pd
 
 df = pd.DataFrame({
     "car": ["ferrari","honda","mazda"],

@@ -1,9 +1,13 @@
 #!/usr/bin/env python
 
-import pandas
+"""
+Learn and print the decision tree which is the result of the learning
+"""
+
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 import sklearn.tree
+import pandas
 
 ctor = DecisionTreeClassifier
 tbl = pandas.read_csv("data.csv")

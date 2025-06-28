@@ -1,11 +1,15 @@
 #!/usr/bin/env python
 
+"""
+basic learning example
+"""
+
 import random
-import pandas
+import numpy
 import sklearn.tree
 import sklearn.ensemble
 import sklearn.model_selection
-import numpy
+import pandas
 
 random.seed(5)
 numpy.random.seed(5)

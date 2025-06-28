@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+"""
+Example that shows that we can complete any series of number with any number
+"""
+
 # f(1) = 1
 # f(2) = 4
 # f(3) = 9
@@ -16,8 +20,7 @@ def produce_number_alt_2(i):
 def produce_number_alt(i):
     if i<5:
         return i*i
-    else:
-        return 1979+i-5
+    return 1979+i-5
 
 def produce_number(i):
     return i*i

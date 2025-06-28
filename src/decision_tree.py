@@ -1,8 +1,12 @@
 #!/usr/bin/env python
 
-import pandas
+"""
+Tecision tree learning
+"""
+
 import sklearn.tree
 import sklearn.model_selection
+import pandas
 
 tbl = pandas.read_csv("data.csv")
 tbl.fillna(0, inplace=True)

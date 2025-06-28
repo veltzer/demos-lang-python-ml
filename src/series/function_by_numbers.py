@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+"""
+An example of how to do a function that does not follow any rule
+"""
+
 def my_function(x):
     if x==1:
         return 1
@@ -7,6 +11,7 @@ def my_function(x):
         return 4
     if x==3:
         return 1979
+    return 0
 
 
 for i in range(1,4):

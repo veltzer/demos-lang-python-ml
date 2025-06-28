@@ -1,10 +1,14 @@
 #!/usr/bin/python3
 
+"""
+An example of how to create a series with a python function
+"""
+
+
 def produce_number_alt(i):
     if i<5:
         return i*i
-    else:
-        return 1979+i
+    return 1979+i
 
 def produce_number(i):
     return i*i

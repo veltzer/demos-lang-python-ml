@@ -8,9 +8,9 @@ DO_ALLDEP:=1
 # do you want to check python syntax?
 DO_SYNTAX:=1
 # do you want to lint python files?
-DO_LINT:=0
+DO_LINT:=1
 # do you want to lint python files using mypy?
-DO_MYPY:=0
+DO_MYPY:=1
 
 ########
 # code #

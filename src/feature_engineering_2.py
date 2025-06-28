@@ -1,10 +1,14 @@
 #!/usr/bin/env python
 
+"""
+Another example of feature engineering
+"""
+
 import numpy
-import pandas
 import sklearn.neighbors
 import sklearn.tree
 import sklearn.naive_bayes
+import pandas
 
 # features
 f_embarked=False

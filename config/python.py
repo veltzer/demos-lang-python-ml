@@ -7,6 +7,8 @@ install_requires: list[str] = [
     "pandas",
     "numpy",
     "matplotlib",
+    "psutil",
+    "dask",
     # deep learining
     "tensorflow",
     "keras",

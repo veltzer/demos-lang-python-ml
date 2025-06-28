@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+
+"""
+showing the 'groupby' feature of pandas
+"""
+
 import pandas
 
 tbl = pandas.read_csv("data.csv")

@@ -1,15 +1,18 @@
 #!/usr/bin/env python
 
-import random
-import pandas as pd
+"""
+Show how to make your machine learning script deterministic by setting the random seeds.
+"""
 
+import random
 from sklearn.tree import DecisionTreeClassifier
 # from sklearn.linear_model import LogisticRegression
 # from sklearn.neighbors import KNeighborsClassifier
 # from sklearn.svm import SVC
-import numpy.random
-
 from sklearn.model_selection import train_test_split
+import numpy.random
+import pandas as pd
+
 
 random.seed(0)
 numpy.random.seed(0)

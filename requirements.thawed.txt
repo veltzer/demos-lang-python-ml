@@ -1,9 +1,11 @@
 # THIS IS AN AUTO-GENERATED FILE. DO NOT EDIT!
+dask
 keras
 matplotlib
 mypy
 numpy
 pandas
+psutil
 pyarrow
 pycmdtools
 pycmdtools

@@ -4,12 +4,15 @@
 This demos shows the types of columsn in a pandas table...
 """
 
-import pandas
 import random
+import os
 import sys
-import os, psutil
+import psutil
+import pandas
 
-if False:
+DO=False
+
+if DO:
     tbl = pandas.read_csv("data.csv")
     print(tbl.dtypes)
     print("==========================================")
@@ -25,4 +28,4 @@ for i in range(890):
         new_row.append(random.random())
     m.append(new_row)
 process = psutil.Process(os.getpid())
-print(process.memory_info().rss)  # in bytes 
+print(process.memory_info().rss)  # in bytes
