@@ -8,6 +8,7 @@ pandas
 pandas-stubs
 psutil
 pyarrow
+pycmdtools
 pydmt
 pylint
 pymakehelper
