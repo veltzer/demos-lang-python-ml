@@ -64,7 +64,7 @@ protobuf==5.29.5
 psutil==7.0.0
 pyarrow==20.0.0
 pycmdtools==0.0.85
-pydmt==0.3.24
+pydmt==0.3.26
 pyfakeuse==0.0.9
 Pygments==2.19.2
 pylint==3.3.7
