@@ -80,7 +80,7 @@ pytz==2025.2
 pyyaml==6.0.2
 referencing==0.36.2
 requests==2.32.4
-rich==14.0.0
+rich==13.9.4
 roman-numerals-py==3.1.0
 rpds-py==0.25.1
 ruff==0.12.1
