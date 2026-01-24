@@ -1,6 +1,4 @@
-
-
-
+Predict survival on the Titanic data.
 Take the generic example called learn.py from my github repo:
 	http://github.com/veltzer/demos-ml-python
 
