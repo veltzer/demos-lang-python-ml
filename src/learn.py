@@ -14,7 +14,7 @@ import pandas
 random.seed(5)
 numpy.random.seed(5)
 
-tbl = pandas.read_csv("data.csv")
+tbl = pandas.read_csv("../data/titanic.csv")
 # tbl.fillna(0, inplace=True)
 
 X = tbl.drop(["Survived"], axis=1,)
