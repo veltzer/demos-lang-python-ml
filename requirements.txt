@@ -60,7 +60,7 @@ pathspec==0.12.1
 pillow==11.3.0
 platformdirs==4.3.8
 pluggy==1.6.0
-protobuf==5.29.5
+protobuf==6.32.0rc2
 psutil==7.0.0
 pyarrow==21.0.0
 pyclassifiers==0.0.20
@@ -70,14 +70,14 @@ pyfakeuse==0.0.9
 pygments==2.19.2
 pylint==3.3.8
 pylogconf==0.0.38
-pymakehelper==0.0.38
+pymakehelper==0.0.37
 pyparsing==3.2.3
-pytconf==0.1.21
+pytconf==0.1.19
 pytest==8.4.1
 python-dateutil==2.9.0.post0
 pytidylib==0.3.2
 pytz==2025.2
-pyyaml==6.0.3
+pyyaml==6.0.2
 referencing==0.36.2
 requests==2.32.5
 rich==13.9.4
@@ -86,6 +86,7 @@ rpds-py==0.27.1
 ruff==0.12.8
 scikit-learn==1.7.1
 scipy==1.16.1
+seaborn==0.13.2
 setuptools==80.9.0
 six==1.17.0
 smmap==5.0.2
@@ -101,7 +102,7 @@ sphinxcontrib-serializinghtml==2.0.0
 tensorboard==2.20.0
 tensorboard-data-server==0.7.2
 tensorflow==2.20.0rc0
-termcolor==3.2.0
+termcolor==3.1.0
 threadpoolctl==3.6.0
 tomlkit==0.13.3
 toolz==1.0.0
@@ -110,6 +111,7 @@ types-psutil==7.0.0.20250801
 types-pytz==2025.2.0.20250809
 types-pyyaml==6.0.12.20250809
 types-requests==2.32.4.20250809
+types-seaborn==0.13.2.20251221
 types-termcolor==1.1.6.2
 typing-extensions==4.15.0
 tzdata==2025.2
