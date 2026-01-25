@@ -16,7 +16,9 @@ pymakehelper
 pytest
 ruff
 scikit-learn
+seaborn
 tensorflow
 types-PyYAML
 types-psutil
+types-seaborn
 types-termcolor

@@ -4,9 +4,9 @@
 basic learning example
 """
 
-import pandas
-import seaborn
 import matplotlib.pyplot as plt
+import seaborn
+import pandas
 
 df = pandas.read_csv("../data/titanic.csv")
 

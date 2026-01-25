@@ -1,3 +1,7 @@
+"""
+A demo of how to do newton/raphson in python
+"""
+
 def square(x):
     return x*x
 
@@ -22,6 +26,6 @@ def newton_raphson(f, initial_guess=1.0, max_iterations=1000, dx=0.001, precisio
 
 result=newton_raphson(identity)
 if result is None:
-    print(f"couldnt find solution")
+    print("couldnt find solution")
 else:
     print(f"found solution {result}")
