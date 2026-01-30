@@ -6,13 +6,13 @@ for an algorithm that needs normalized data (e.g. KNN).
 """
 
 import pandas
-from sklearn.preprocessing import StandardScaler, MinMaxScaler
+from sklearn.preprocessing import StandardScaler
 
 df = pandas.read_csv("../../data/titanic_numeric.csv")
 
 scaler = StandardScaler()
-# scaler = MinMaxScaler()
-df = pandas.DataFrame(scaler.fit_transform(df), columns=df.columns, index=df.index)
+cols_to_scale = df.columns.drop("Survived")
+df[cols_to_scale] = scaler.fit_transform(df[cols_to_scale])
 
 # write the data back to disk
 
