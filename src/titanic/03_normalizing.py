@@ -5,8 +5,8 @@ This example show how to normalize an entire data frame in preparation
 for an algorithm that needs normalized data (e.g. KNN).
 """
 
-import pandas
 from sklearn.preprocessing import StandardScaler
+import pandas
 
 df = pandas.read_csv("../../data/titanic_numeric.csv")
 

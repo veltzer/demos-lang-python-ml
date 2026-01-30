@@ -14,7 +14,7 @@ print(df.isna().sum()[df.isna().sum() > 0])
 print(df["Embarked"].value_counts())
 
 
-"""
+print("""
 I ran the lines above to check what is out non available data.
 This is what we got:
 
@@ -35,7 +35,8 @@ I then decided to:
 - removed other columns as they are partially either non numeric, with no data that can be used,
     PassengerId, Name, Ticket
 - only two lines with embarked missing - remove them, not a big loss.
-"""
+""")
+
 df = df.dropna(subset=["Age", "Embarked"])
 print(df.shape)
 df = df.drop(columns=["Cabin", "PassengerId", "Name", "Ticket"])

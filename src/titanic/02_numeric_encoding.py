@@ -14,10 +14,6 @@ df = pandas.read_csv("../../data/titanic_clean.csv")
 
 print(df.select_dtypes(exclude="number").columns)
 
-"""
-Index(["Sex", "Embarked"], dtype="object")
-"""
-
 # So we need to turn "Sex" and "Embarked" to numeric values
 
 df["Sex"] = df["Sex"].astype("category").cat.codes

@@ -4,10 +4,10 @@
 This is an example of running KNN on clean, numeric, normalized data.
 """
 
-import pandas
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report, precision_score, confusion_matrix
+import pandas
 
 df = pandas.read_csv("../../data/titanic_normalized.csv")
 
