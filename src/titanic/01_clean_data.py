@@ -32,10 +32,12 @@ Name: count, dtype: int64
 I then decided to:
 - remove the 177 lines with no age, age is important
 - remove the Cabin column completely, as it is almost empty
+- removed other columns as they are partially either non numeric, with no data that can be used,
+    PassengerId, Name, Ticket
 - only two lines with embarked missing - remove them, not a big loss.
 """
 df = df.dropna(subset=["Age", "Embarked"])
 print(df.shape)
-df = df.drop(columns="Cabin")
+df = df.drop(columns=["Cabin", "PassengerId", "Name", "Ticket"])
 print(df.shape)
 df.to_csv("../../data/titanic_clean.csv", index=False)
