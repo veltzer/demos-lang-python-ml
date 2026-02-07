@@ -11,12 +11,10 @@ before optimizatin:
     user    0m1.101s
     sys     0m0.832s
 """
-    
-import pandas as pd
-import random
+
 from sklearn.tree import DecisionTreeClassifier
-import numpy.random
 from sklearn.model_selection import train_test_split
+import pandas as pd
 
 X = pd.read_csv("data.csv")
 X.fillna(0, inplace=True)
