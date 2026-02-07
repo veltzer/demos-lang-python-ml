@@ -11,8 +11,8 @@ import pandas
 import numpy
 import random
 
-random.seed(0)
-numpy.random.seed(0)
+# random.seed(0)
+# numpy.random.seed(0)
 
 df = pandas.read_csv("../../data/titanic_normalized.csv")
 
@@ -26,16 +26,8 @@ X = df.drop(columns="Survived")
 X_train, X_test, y_train, y_test = train_test_split(X, y)
 
 # training
-knn = KNeighborsClassifier()
-knn.fit(X_train, y_train)
-
-# Predict
-y_pred = knn.predict(X_test)
-
-# Evaluate
-print(f"accuracy is {accuracy_score(y_test, y_pred)}")
-print(f"prevision is {precision_score(y_test, y_pred)}")
-# print recall
-# print F1
-print(classification_report(y_test, y_pred))
-print(confusion_matrix(y_test, y_pred))
+for n in range(3,9,2):
+    knn = KNeighborsClassifier(n_neighbors=n)
+    knn.fit(X_train, y_train)
+    y_pred = knn.predict(X_test)
+    print(f"k={n},{accuracy_score(y_test, y_pred)}")

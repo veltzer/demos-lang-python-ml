@@ -6,6 +6,10 @@ The data is the Titanic data.
 """
 
 import pandas
+import random
+
+random.seed(0)
+numpy.random.seed(0)
 
 df = pandas.read_csv("../../data/titanic.csv")
 

@@ -7,6 +7,10 @@ basic learning example
 import matplotlib.pyplot as plt
 import seaborn
 import pandas
+import random
+
+random.seed(0)
+numpy.random.seed(0)
 
 df = pandas.read_csv("../data/titanic.csv")
 

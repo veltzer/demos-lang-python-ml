@@ -7,6 +7,10 @@ for an algorithm that needs normalized data (e.g. KNN).
 
 from sklearn.preprocessing import StandardScaler
 import pandas
+import random
+
+random.seed(0)
+numpy.random.seed(0)
 
 df = pandas.read_csv("../../data/titanic_numeric.csv")
 
