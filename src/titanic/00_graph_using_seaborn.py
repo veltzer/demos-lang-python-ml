@@ -4,10 +4,11 @@
 basic learning example
 """
 
+import random
+import numpy
 import matplotlib.pyplot as plt
 import seaborn
 import pandas
-import random
 
 random.seed(0)
 numpy.random.seed(0)

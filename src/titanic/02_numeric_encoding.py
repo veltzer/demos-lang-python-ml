@@ -6,8 +6,9 @@ values in preparation to doing ML with an algorithm that only works with
 numeric data (e.g. KNN).
 """
 
-import pandas
 import random
+import numpy
+import pandas
 
 random.seed(0)
 numpy.random.seed(0)

@@ -5,8 +5,9 @@ This example shows how to clean data in machine learning.
 The data is the Titanic data.
 """
 
-import pandas
 import random
+import numpy
+import pandas
 
 random.seed(0)
 numpy.random.seed(0)

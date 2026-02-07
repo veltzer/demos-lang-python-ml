@@ -1,18 +1,19 @@
 #!/usr/bin/env python
 
 """
-This is an example of running KNN on clean, numeric, normalized data.
+This is an example of how to produce the correlation matrix of a table of data.
+The purpose is to find columns that have a strong correlation with the result - in order
+to keep them.
+And two find pairs of columns which are correlated bewteen themselves - in order to drop
+one of them and reduce dimensionality.
 """
 
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, classification_report, precision_score, confusion_matrix
-import pandas
-import numpy
 import random
+import numpy
+import pandas
 
-# random.seed(0)
-# numpy.random.seed(0)
+random.seed(0)
+numpy.random.seed(0)
 
 df = pandas.read_csv("../../data/titanic_normalized.csv")
 

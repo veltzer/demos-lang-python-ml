@@ -1,19 +1,19 @@
 #!/usr/bin/env python
 
 """
-This is an example of running KNN on clean, numeric, normalized data.
+This is an example of how to find which columns could be dropped
 """
 
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, classification_report, precision_score, confusion_matrix
-import pandas
-import numpy
 import random
 from itertools import combinations
+import numpy
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+import pandas
 
-# random.seed(0)
-# numpy.random.seed(0)
+random.seed(0)
+numpy.random.seed(0)
 
 df = pandas.read_csv("../../data/titanic_normalized.csv")
 
@@ -22,7 +22,7 @@ y = df["Survived"]
 
 # X = everything except target
 X = df.drop(columns="Survived")
-    
+
 print("no columns dropped")
 X_train, X_test, y_train, y_test = train_test_split(X, y)
 knn = KNeighborsClassifier(n_neighbors=5)

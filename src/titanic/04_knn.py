@@ -4,12 +4,12 @@
 This is an example of running KNN on clean, numeric, normalized data.
 """
 
+import random
+import numpy
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report, precision_score, confusion_matrix
 import pandas
-import numpy
-import random
 
 random.seed(0)
 numpy.random.seed(0)

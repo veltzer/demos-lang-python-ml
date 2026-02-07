@@ -5,9 +5,10 @@ This example show how to normalize an entire data frame in preparation
 for an algorithm that needs normalized data (e.g. KNN).
 """
 
+import random
+import numpy
 from sklearn.preprocessing import StandardScaler
 import pandas
-import random
 
 random.seed(0)
 numpy.random.seed(0)
