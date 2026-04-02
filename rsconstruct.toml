@@ -1,32 +1,23 @@
-[processor.make]
-exclude_paths = ["Makefile"]
+# [processor.pyrefly]
 
-[processor.pyrefly]
-enabled = false
+[processor.ruff]
 
-[processor.markdownlint]
-enabled = false
-
-[processor.ascii_check]
-enabled = false
-
-[processor.mdl]
-enabled = false
-
-[processor.a2x]
-enabled = false
-
-[processor.rumdl]
-enabled = false
+# [processor.markdownlint]
 
 [processor.slidev]
-enabled = false
 
-[processor.tidy]
-enabled = false
+[processor.zspell]
 
-[processor.htmlhint]
-enabled = false
+[processor.taplo]
 
-[processor.htmllint]
-enabled = false
+[processor.pylint]
+
+[processor.yq]
+
+[processor.yamllint]
+
+[processor.aspell]
+
+[processor.mypy]
+
+[processor.markdown]
