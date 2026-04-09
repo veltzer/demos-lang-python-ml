@@ -10,8 +10,8 @@ import pandas as pd
 
 num_stability_runs=10
 for i in range(2, 40):
-    score=0
-    score_train=0
+    score: float = 0
+    score_train: float = 0
     for j in range(num_stability_runs):
         tbl = pd.read_csv("data.csv")
         tbl.fillna(0, inplace=True)
@@ -24,6 +24,6 @@ for i in range(2, 40):
         # alg = DecisionTreeClassifier(max_depth=i)
         alg = DecisionTreeClassifier(max_leaf_nodes=i)
         alg.fit(X_train, y_train)
-        score += alg.score(X_test, y_test)
-        score_train += alg.score(X_train, y_train)
+        score += float(alg.score(X_test, y_test))
+        score_train += float(alg.score(X_train, y_train))
     print(f"{i} {score/num_stability_runs} {score_train/num_stability_runs}")

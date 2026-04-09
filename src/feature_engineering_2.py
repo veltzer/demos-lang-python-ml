@@ -5,6 +5,7 @@ Another example of feature engineering
 """
 
 import numpy
+import sklearn.model_selection
 import sklearn.neighbors
 import sklearn.tree
 import sklearn.naive_bayes
@@ -36,7 +37,7 @@ if f_turn_column_sex_into_male_female:
     tbl.drop(["Sex"], axis=1, inplace=True)
 
 if f_embarked:
-    tbl["Embarked"] = tbl["Embarked"].fillna(tbl["Embarked"].value_counts().index[0])
+    tbl["Embarked"] = tbl["Embarked"].fillna(str(tbl["Embarked"].value_counts().index[0]))
 else:
     tbl.drop(["Embarked"], axis=1, inplace=True)
 

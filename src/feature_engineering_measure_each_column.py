@@ -16,7 +16,7 @@ tbl['Embarked'].fillna('S', inplace=True)
 tbl['Sex'] = tbl['Sex'].replace('male', 0).replace('female', 1)
 
 i_num = 20
-score = 0
+score: float = 0
 for i in range(i_num):
     #X = tbl.drop(['Survived', 'PassengerId', 'Name', 'Ticket', 'Cabin'], axis=1) #score about 0.77
     X = tbl.drop(['Survived', 'PassengerId', 'Name', 'Cabin'], axis=1) #score about 0.82
@@ -27,7 +27,7 @@ for i in range(i_num):
 
     alg = DecisionTreeClassifier()
     alg.fit(X_train, y_train)
-    score += alg.score(X_test, y_test)
+    score += float(alg.score(X_test, y_test))
 
 before_fe_score = score/i_num
 print(f'overall score BEFORE FEATURE ENGINEERING: {round(before_fe_score, 3)}') # about 0.82
@@ -37,7 +37,7 @@ fe_columns_org = ['MartialStatus', 'LastName', 'count_lastname', 'Relatives',
               'Cabin_bool', 'Ticket_bool', 'count_Embarked', 'Cabin_first_letter',
               'ticket_num', 'ticket_letters', 'Cabin_number', 'ticket_cnt']
 
-fe_columns_change = {}
+fe_columns_change: dict[str, float] = {}
 for c in fe_columns_org:
     fe_columns = fe_columns_org.copy()
     fe_columns.remove(c) # in order to drop remaining columns
@@ -66,7 +66,7 @@ for c in fe_columns_org:
 
         alg = DecisionTreeClassifier()
         alg.fit(X_train, y_train)
-        score += alg.score(X_test, y_test)
+        score += float(alg.score(X_test, y_test))
 
     fe_columns_change[c] = round(score/i_num - before_fe_score, 3)
     print(f'overall score AFTER FEATURE ENGINEERING {c}: {round(score/i_num, 3)}')

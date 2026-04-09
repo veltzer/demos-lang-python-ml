@@ -1,23 +1,52 @@
-# [processor.pyrefly]
+[processor.pyrefly]
+scan_dirs = ["src"]
+exclude_dirs = [
+	"config",
+	"not_mine",
+	"tests",
+	"to_integrate",
+]
+
+[processor.make]
+scan_dirs = ["src"]
+
+# [processor.cc_single_file]
+# scan_dirs = ["src"]
+# include_paths = [
+# 	"/usr/include/python3.13",
+# ]
+# exclude_dirs = ["/bad_lib/", "/crashing_python/", "/embedding_python_in_c/", "/extending_python_with_c/"]
+
+[analyzer.cpp]
+include_paths = [
+	"/usr/include/python3.13",
+]
+
+[processor.cppcheck]
+args = [
+	"--error-exitcode=1",
+	"--enable=warning,style,performance,portability",
+	"--inline-suppr",
+]
 
 [processor.ruff]
-
-# [processor.markdownlint]
-
-[processor.slidev]
-
-[processor.zspell]
-
-[processor.taplo]
+scan_dirs = ["src"]
 
 [processor.pylint]
-
-[processor.yq]
-
-[processor.yamllint]
-
-[processor.aspell]
+scan_dirs = ["src"]
+exclude_dirs = [
+	"config",
+	"not_mine",
+	"tests",
+	"to_integrate",
+	"src/examples/long",
+]
 
 [processor.mypy]
-
-[processor.markdown]
+scan_dirs = ["src"]
+exclude_dirs = [
+	"config",
+	"not_mine",
+	"tests",
+	"to_integrate",
+]

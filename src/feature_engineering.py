@@ -25,13 +25,13 @@ Y = tbl[["Survived"]]
 
 def run_it(title):
     print(f"number of columns is {len(X.columns)}")
-    score = 0
+    score: float = 0
     num_runs=40
     for _ in range(num_runs):
         alg = DecisionTreeClassifier()
         X_train, X_test, y_train, y_test = train_test_split(X, Y)
         alg.fit(X_train, y_train)
-        score += alg.score(X_test, y_test)
+        score += float(alg.score(X_test, y_test))
     print(f"avg {title} is {score/num_runs}")
 
 run_it("before fe")
