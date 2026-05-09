@@ -1,7 +1,0 @@
-
-
-
-
-	if f(x) is a function then the derivitive f'(x) is approximately:
-
-		f'(x) = (f(x+dx)-f(x-dx))/2*dx
