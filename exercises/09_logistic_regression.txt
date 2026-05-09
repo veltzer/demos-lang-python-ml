@@ -1,3 +1,0 @@
-
-
-Solve the titanic problem using Logstic Regression.

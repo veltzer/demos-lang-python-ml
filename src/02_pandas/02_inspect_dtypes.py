@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""Solution to exercise 03: inspect column dtypes via .dtypes and .items()."""
+"""Solution to exercise 02: inspect column dtypes with info(), dtypes, and items()."""
 
 import pandas as pd
 
@@ -11,6 +11,8 @@ df = pd.DataFrame({
     "active": [True, False, True],
 })
 
+df.info()
+print("==========================================")
 print(df.dtypes)
 print("==========================================")
 for column_name, column_data in df.items():
