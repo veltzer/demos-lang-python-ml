@@ -3,3 +3,11 @@ src_dirs = ["src", "config"]
 
 [processor.mypy]
 src_dirs = ["src", "config"]
+
+[processor.pylint]
+src_dirs = ["src", "config"]
+
+[processor.zspell]
+src_dirs = ["src"]
+src_extensions = ["md"]
+auto_add_words = true
