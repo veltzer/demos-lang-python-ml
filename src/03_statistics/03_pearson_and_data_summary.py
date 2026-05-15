@@ -7,6 +7,7 @@ import pandas as pd
 df = pd.read_csv("data.csv")
 
 numeric = df.select_dtypes(include="number")
+print(numeric.corr())
 correlations = numeric.corr()["Survived"].drop("Survived").sort_values(ascending=False)
 print("Pearson correlation with Survived:")
 print(correlations)
