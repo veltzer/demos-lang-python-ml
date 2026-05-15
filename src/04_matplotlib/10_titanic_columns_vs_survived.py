@@ -5,7 +5,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("../../data/titanic.csv")
+df = pd.read_csv("data/titanic.csv")
 
 numeric_cols = ["Age", "Fare", "SibSp", "Parch", "Pclass"]
 categorical_cols = ["Sex", "Embarked"]

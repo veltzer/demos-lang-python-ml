@@ -4,7 +4,7 @@
 
 import pandas as pd
 
-df = pd.read_csv("data.csv")
+df = pd.read_csv("data/titanic.csv")
 
 numeric = df.select_dtypes(include="number")
 print(numeric.corr())

@@ -12,7 +12,7 @@ import pandas
 # always get the same results...
 numpy.random.seed(5)
 
-tbl = pandas.read_csv("../../data/titanic.csv")
+tbl = pandas.read_csv("data/titanic.csv")
 print(tbl)
 for col in tbl.columns:
     tbl[col] = tbl[col].fillna(0 if pandas.api.types.is_numeric_dtype(tbl[col]) else "")

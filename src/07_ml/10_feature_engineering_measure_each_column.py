@@ -8,7 +8,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 import pandas as pd
 
-tbl = pd.read_csv("data.csv")
+tbl = pd.read_csv("data/titanic.csv")
 #Fillna
 tbl['Age'].fillna(tbl['Age'].mean(), inplace=True)
 tbl['Cabin'].fillna(0, inplace=True)

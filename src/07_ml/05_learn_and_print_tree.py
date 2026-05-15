@@ -10,7 +10,7 @@ import sklearn.tree
 import pandas
 
 ctor = DecisionTreeClassifier
-tbl = pandas.read_csv("data.csv")
+tbl = pandas.read_csv("data/titanic.csv")
 tbl.fillna(0, inplace=True)
 tbl.drop(["Name", "Embarked", "Cabin", "Ticket"], inplace=True, axis=1)
 X = tbl.drop(["Survived"], axis=1,)

@@ -21,7 +21,7 @@ def prepare(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def main() -> None:
-    df = pd.read_csv("data.csv")
+    df = pd.read_csv("data/titanic.csv")
     y = df["Survived"]
     base = prepare(df.drop("Survived", axis=1))
     print("baseline:", score(base, y))

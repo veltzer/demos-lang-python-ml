@@ -27,7 +27,7 @@ f_fillna=True
 numpy.random.seed(5)
 
 # Fill missing Embarked with most frequent value
-tbl = pandas.read_csv("data.csv")
+tbl = pandas.read_csv("data/titanic.csv")
 
 if f_fillna:
     tbl.fillna(0, inplace=True)

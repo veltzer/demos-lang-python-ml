@@ -10,7 +10,7 @@ import pandas as pd
 
 SEED = 0
 
-df = pd.read_csv("data.csv")
+df = pd.read_csv("data/titanic.csv")
 df.fillna(0, inplace=True)
 df.drop(["Name", "Embarked", "Cabin", "Ticket"], axis=1, inplace=True)
 y = df["Survived"]

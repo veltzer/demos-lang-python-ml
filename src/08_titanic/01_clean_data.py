@@ -12,7 +12,7 @@ import pandas
 random.seed(0)
 numpy.random.seed(0)
 
-df = pandas.read_csv("../../data/titanic.csv")
+df = pandas.read_csv("data/titanic.csv")
 
 print(f"total number of rows is {df.shape[0]}...")
 print(df.isna().sum()[df.isna().sum() > 0])
@@ -46,4 +46,4 @@ df = df.dropna(subset=["Age", "Embarked"])
 print(df.shape)
 df = df.drop(columns=["Cabin", "PassengerId", "Name", "Ticket"])
 print(df.shape)
-df.to_csv("../../data/titanic_clean.csv", index=False)
+df.to_csv("data/titanic_clean.csv", index=False)

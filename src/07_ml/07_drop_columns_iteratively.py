@@ -6,7 +6,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 import pandas as pd
 
-X = pd.read_csv("data.csv")
+X = pd.read_csv("data/titanic.csv")
 X.fillna(0, inplace=True)
 X.drop(["Name", "Embarked", "Cabin", "Ticket"], axis=1, inplace=True)
 Y = X[["Survived"]]

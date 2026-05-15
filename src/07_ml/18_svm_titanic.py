@@ -8,7 +8,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score, precision_score, recall_score
 import pandas as pd
 
-df = pd.read_csv("../../data/titanic.csv")
+df = pd.read_csv("data/titanic.csv")
 df = df.drop(columns=["Name", "Cabin", "Ticket", "PassengerId"])
 df = df.dropna()
 df["Sex"] = df["Sex"].astype("category").cat.codes

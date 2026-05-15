@@ -19,7 +19,7 @@ numpy.random.seed(0)
 
 ctor = DecisionTreeClassifier
 
-tbl = pd.read_csv("data.csv")
+tbl = pd.read_csv("data/titanic.csv")
 tbl.fillna(0, inplace=True)
 
 X = tbl.drop(["Survived"], axis=1,)

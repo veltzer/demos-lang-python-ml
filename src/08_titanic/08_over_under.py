@@ -14,7 +14,7 @@ import pandas
 random.seed(0)
 numpy.random.seed(0)
 
-df = pandas.read_csv("../../data/titanic_normalized.csv")
+df = pandas.read_csv("data/titanic_normalized.csv")
 
 # y = target column
 y = df["Survived"]

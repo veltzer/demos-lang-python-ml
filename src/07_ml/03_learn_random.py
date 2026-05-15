@@ -15,7 +15,7 @@ import pandas as pd
 
 ctor = DecisionTreeClassifier
 
-tbl = pd.read_csv("data.csv")
+tbl = pd.read_csv("data/titanic.csv")
 tbl.fillna(0, inplace=True)
 
 tbl = tbl.drop(["Survived"], axis=1,)

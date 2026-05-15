@@ -6,7 +6,7 @@ from sklearn.tree import DecisionTreeClassifier, export_text, plot_tree
 import matplotlib.pyplot as plt
 import pandas as pd
 
-df = pd.read_csv("data.csv")
+df = pd.read_csv("data/titanic.csv")
 df.fillna(0, inplace=True)
 df.drop(["Name", "Embarked", "Cabin", "Ticket"], axis=1, inplace=True)
 y = df["Survived"]

@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 import pandas as pd
 
-df = pd.read_csv("../../data/titanic.csv")
+df = pd.read_csv("data/titanic.csv")
 df = df.drop(columns=["Name", "Cabin", "Ticket", "PassengerId"])
 df = df.dropna()
 df["Sex"] = df["Sex"].astype("category").cat.codes

@@ -13,7 +13,7 @@ import pandas
 random.seed(0)
 numpy.random.seed(0)
 
-df = pandas.read_csv("../../data/titanic_clean.csv")
+df = pandas.read_csv("data/titanic_clean.csv")
 
 # show all columns which are non numeric
 
@@ -26,4 +26,4 @@ df["Embarked"] = df["Embarked"].astype("category").cat.codes
 
 # write the data back to disk
 
-df.to_csv("../../data/titanic_numeric.csv", index=False)
+df.to_csv("data/titanic_numeric.csv", index=False)

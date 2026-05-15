@@ -13,7 +13,7 @@ import pandas
 random.seed(0)
 numpy.random.seed(0)
 
-df = pandas.read_csv("../data/titanic.csv")
+df = pandas.read_csv("data/titanic.csv")
 
 # seaborn.regplot(x=df['Age'], y=df['Survived'])
 # plt.show()
