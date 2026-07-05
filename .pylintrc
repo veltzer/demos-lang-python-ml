@@ -59,7 +59,7 @@ ignore-patterns=^\.#
 # (useful for modules/projects where namespaces are manipulated during runtime
 # and thus existing member attributes cannot be deduced by static analysis). It
 # supports qualified module names, as well as Unix pattern matching.
-ignored-modules=cv2,sklearn,sklearn.tree,sklearn.model_selection,sklearn.neighbors,sklearn.naive_bayes,sklearn.ensemble,sklearn.linear_model,sklearn.preprocessing,sklearn.metrics,matplotlib,matplotlib.pyplot,seaborn,psutil,plotly,plotly.express,plotly.graph_objects,plotly.subplots
+ignored-modules=cv2,sklearn,sklearn.tree,sklearn.model_selection,sklearn.neighbors,sklearn.naive_bayes,sklearn.ensemble,sklearn.linear_model,sklearn.preprocessing,sklearn.metrics,matplotlib,matplotlib.pyplot,seaborn,psutil,plotly,plotly.express,plotly.graph_objects,plotly.subplots,polars
 
 # Python code to execute, usually for sys.path manipulation such as
 # pygtk.require().

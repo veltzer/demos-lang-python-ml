@@ -46,6 +46,7 @@ logreg
 martialstatus
 matplotlib
 mljar
+namespace
 nan
 nans
 neighbours
@@ -55,7 +56,9 @@ overfits
 overfitting
 pasteable
 pearson
+pl
 plotly
+polars
 png
 pre
 px
@@ -81,6 +84,7 @@ twinx
 underfit
 underfits
 underfitting
+unpivot
 undersampling
 ve
 votingclassifier

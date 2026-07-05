@@ -8,6 +8,7 @@ install_requires: list[str] = [
     # "sklearn",
     "pyarrow",
     "pandas",
+    "polars",
     "numpy",
     "matplotlib",
     "psutil",
