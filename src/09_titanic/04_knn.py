@@ -34,7 +34,7 @@ y_pred = knn.predict(X_test)
 
 # Evaluate
 print(f"accuracy is {accuracy_score(y_test, y_pred)}")
-print(f"prevision is {precision_score(y_test, y_pred)}")
+print(f"precision is {precision_score(y_test, y_pred)}")
 # print recall
 # print F1
 print(classification_report(y_test, y_pred))
