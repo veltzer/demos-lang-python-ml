@@ -5,7 +5,7 @@ matplotlib's. Pass a DataFrame, name the value column, name the label column.
 
 Given:
 
-```
+```text
 df = pd.DataFrame({
     "browser":  ["Chrome", "Safari", "Firefox", "Edge", "Other"],
     "share":    [65, 18, 8, 5, 4],

@@ -15,7 +15,7 @@ a class. `sklearn.tree.export_text` prints it.
 
 You will see lines like:
 
-```
+```text
 |--- feature_6 <= 0.50
 |   |--- feature_5 <= 26.27
 |   |   |--- ...

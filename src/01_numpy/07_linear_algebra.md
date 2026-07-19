@@ -2,7 +2,7 @@
 
 Solve the linear system `A x = b` where:
 
-```
+```text
 A = [[3, 1],
      [1, 2]]
 

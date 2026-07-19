@@ -6,7 +6,7 @@ get a grid of subplots — one per value of the facet column. Same idea as seabo
 
 Build a synthetic dataset with two grouping columns:
 
-```
+```text
 import numpy as np
 
 rng = np.random.default_rng(0)

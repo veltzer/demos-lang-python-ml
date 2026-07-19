@@ -6,7 +6,7 @@ numeric input.
 
 Given:
 
-```
+```text
 df = pd.DataFrame({
     "car":    ["ferrari", "honda", "mazda", "honda"],
     "weight": [4, 5, 6, 5],

@@ -2,14 +2,14 @@
 
 Given two points in n-dimensional space:
 
-```
+```text
 p1 = (x1, x2, x3, ..., xn)
 p2 = (y1, y2, y3, ..., yn)
 ```
 
 The Euclidean distance between `p1` and `p2` is:
 
-```
+```text
 d = sqrt((x1 - y1)^2 + (x2 - y2)^2 + ... + (xn - yn)^2)
 ```
 

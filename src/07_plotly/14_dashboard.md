@@ -12,7 +12,7 @@ analysts ship to non-technical stakeholders.
 
 Build:
 
-```
+```text
 import numpy as np
 
 rng = np.random.default_rng(0)

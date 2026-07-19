@@ -2,7 +2,7 @@
 
 Given:
 
-```
+```text
 import numpy as np
 
 df = pd.DataFrame({

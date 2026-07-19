@@ -5,7 +5,7 @@ distributions across groups.
 
 Build 200 samples per group from `np.random.default_rng(0)`:
 
-```
+```text
 n = 200
 rng = np.random.default_rng(0)
 df = pd.DataFrame({

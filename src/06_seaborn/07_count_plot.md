@@ -5,7 +5,7 @@ category" — like `value_counts` rendered as a chart.
 
 Given:
 
-```
+```text
 df = pd.DataFrame({
     "color": ["red", "blue", "red", "green", "blue", "blue", "red", "red",
               "green", "blue", "red", "blue"],

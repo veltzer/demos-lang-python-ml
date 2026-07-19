@@ -5,7 +5,7 @@ DataFrame directly via column names.
 
 Given:
 
-```
+```text
 df = pd.DataFrame({
     "x": [1, 2, 3, 4, 5, 6, 7, 8],
     "y": [2, 3, 5, 4, 8, 7, 9, 11],

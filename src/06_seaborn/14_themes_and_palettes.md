@@ -7,7 +7,7 @@ Seaborn ships with several built-in *themes* (axes background, gridlines, fonts)
 Plot the same scatter four times in a 2x2 grid, each subplot using a different
 combination of theme and palette. Use this dataset:
 
-```
+```text
 import numpy as np
 
 rng = np.random.default_rng(0)

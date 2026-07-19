@@ -6,7 +6,7 @@ to ask "is the relationship between x and y the same across each subgroup?".
 
 Build a synthetic dataset with two grouping columns:
 
-```
+```text
 import numpy as np
 
 rng = np.random.default_rng(0)

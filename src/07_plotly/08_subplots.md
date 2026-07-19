@@ -6,7 +6,7 @@ to `plotly.graph_objects` and use `make_subplots`.
 
 Build:
 
-```
+```text
 import numpy as np
 
 rng = np.random.default_rng(0)

@@ -2,7 +2,7 @@
 
 Given:
 
-```
+```text
 df = pd.DataFrame({
     "dept":     ["eng", "sales", "eng", "hr", "eng", "sales", "hr"],
     "gender":   ["F", "M", "M", "F", "F", "F", "M"],

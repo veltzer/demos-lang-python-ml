@@ -1,0 +1,8 @@
+# Repo-specific overlay for demos-lang-python-ml.
+# Everything conventional lives in rsconstruct.toml (canonical, do not edit).
+
+# Example scripts reuse basenames across chapter directories (e.g.
+# 00_create_series.py in both 02_pandas/ and 03_polars/), which mypy's batch
+# mode rejects as "duplicate module". Per-file invocation sidesteps that.
+[processor.mypy]
+batch = false

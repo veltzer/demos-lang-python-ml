@@ -6,7 +6,7 @@ columns to numeric form first.
 
 Given:
 
-```
+```text
 df = pd.DataFrame({
     "sex":      ["male", "female", "female", "male", "female", "male"],
     "age":      [22, 38, 26, 35, 27, 54],

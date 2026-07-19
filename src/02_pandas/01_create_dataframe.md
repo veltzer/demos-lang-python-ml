@@ -2,7 +2,7 @@
 
 Build a `DataFrame` from this dictionary:
 
-```
+```text
 {
     "name":   ["Alice", "Bob", "Charlie", "Dana"],
     "age":    [30, 25, 35, 28],

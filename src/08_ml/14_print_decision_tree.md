@@ -12,7 +12,7 @@ ways to inspect it:
 
 The text output looks like:
 
-```
+```text
 |--- feature_6 <= 0.50
 |   |--- feature_5 <= 26.27
 |   |   |--- feature_4 <= 0.50

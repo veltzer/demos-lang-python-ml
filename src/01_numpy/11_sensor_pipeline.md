@@ -43,7 +43,7 @@ values[spikes] += rng.choice([-100.0, 100.0], size=int(spikes.sum()))
 
 4. **Expression massaging.** For every clean reading compute the health score
 
-   ```
+   ```text
    score = exp(-((v - mean[sensor]) / std[sensor])^2 / 2)
    ```
 

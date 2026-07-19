@@ -5,7 +5,7 @@ quickest way to see the distribution of a column.
 
 Build a small DataFrame with two columns and split a histogram by group:
 
-```
+```text
 df = pd.DataFrame({
     "Age":      [22, 38, 26, 35, 27, 54, 14, 4, 58, 20, 39, 14, 55, 2, 31, 35],
     "Survived": [0,  1,  1,  1,  0,  0,  1,  1, 0,  1,  0,  0,  1,  1, 0,  0],

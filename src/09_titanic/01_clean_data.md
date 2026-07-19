@@ -18,7 +18,7 @@ Print:
 
 You should see:
 
-```
+```text
 total number of rows is 891...
 Age         177
 Cabin       687

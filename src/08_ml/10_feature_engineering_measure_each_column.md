@@ -10,7 +10,7 @@ with *only that one new feature added* and compare against the baseline.
 
 ## The candidate features
 
-```
+```text
 ['MartialStatus', 'LastName', 'count_lastname', 'Relatives',
  'Cabin_bool', 'Ticket_bool', 'count_Embarked', 'Cabin_first_letter',
  'ticket_num', 'ticket_letters', 'Cabin_number', 'ticket_cnt']

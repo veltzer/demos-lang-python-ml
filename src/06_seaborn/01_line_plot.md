@@ -5,7 +5,7 @@ the `y` values and draws a translucent confidence band around the mean.
 
 Build a DataFrame where each `x` in `0..9` appears 5 times, with `y = 2*x + noise`:
 
-```
+```text
 import numpy as np
 
 rng = np.random.default_rng(0)

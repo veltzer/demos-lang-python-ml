@@ -18,7 +18,7 @@ distance.
 1. Build a scaler: `scaler = StandardScaler()`.
 2. Fit-transform every column **except `Survived`** — the target should not be scaled.
 
-   ```
+   ```text
    cols_to_scale = df.columns.drop("Survived")
    df[cols_to_scale] = scaler.fit_transform(df[cols_to_scale])
    ```

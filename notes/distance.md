@@ -9,7 +9,7 @@ about.
 
 Given two points in `n`-dimensional space:
 
-```
+```text
 p = (p_1, p_2, ..., p_n)
 q = (q_1, q_2, ..., q_n)
 ```
@@ -20,7 +20,7 @@ q = (q_1, q_2, ..., q_n)
 
 The straight-line distance you'd measure with a ruler:
 
-```
+```text
 d_euclidean(p, q) = sqrt( sum over i of (p_i - q_i)^2 )
 ```
 
@@ -32,7 +32,7 @@ KNN).
 
 The distance you'd walk on a grid of streets where you can't cut through buildings:
 
-```
+```text
 d_manhattan(p, q) = sum over i of |p_i - q_i|
 ```
 
@@ -44,7 +44,7 @@ distance.
 
 The largest single-axis disagreement:
 
-```
+```text
 d_chebyshev(p, q) = max over i of |p_i - q_i|
 ```
 
@@ -57,7 +57,7 @@ Chebyshev distance.
 The set of points at distance 1 from the origin — the *unit ball* — looks different for
 each metric:
 
-```
+```text
 Euclidean (L2):           Manhattan (L1):           Chebyshev (L_inf):
 
       ****                       *                  ****************
@@ -92,7 +92,7 @@ Same "distance 1", three completely different shapes.
 scikit-learn's distance-based estimators (`KNeighborsClassifier`, `KMeans`, etc.) take a
 `metric=` parameter:
 
-```
+```text
 KNeighborsClassifier(metric="euclidean")   # default
 KNeighborsClassifier(metric="manhattan")
 KNeighborsClassifier(metric="chebyshev")

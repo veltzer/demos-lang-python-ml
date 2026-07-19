@@ -2,7 +2,7 @@
 
 Given:
 
-```
+```text
 categories = ["apples", "oranges", "bananas", "pears", "grapes"]
 counts     = [23, 17, 35, 12, 28]
 ```

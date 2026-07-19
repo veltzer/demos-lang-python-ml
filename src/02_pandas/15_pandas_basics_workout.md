@@ -2,7 +2,7 @@
 
 Practice the most common DataFrame manipulations in one go. Start from:
 
-```
+```text
 df = pd.DataFrame({
     "name":   ["Alice", "Bob", "Charlie", "Dana", "Eve"],
     "age":    [30, 25, 35, 28, 40],

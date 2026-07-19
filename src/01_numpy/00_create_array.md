@@ -6,7 +6,7 @@ Print the array, its `dtype`, and its `shape`.
 
 ## Expected output
 
-```
+```text
 [1 2 3 4 5]
 int64
 (5,)

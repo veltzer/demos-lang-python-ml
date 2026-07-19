@@ -5,7 +5,7 @@
 
 Given a synthetic 3-feature dataset:
 
-```
+```text
 import numpy as np
 
 rng = np.random.default_rng(0)

@@ -7,7 +7,7 @@ content becomes `object` (Python objects, usually strings).
 
 Given:
 
-```
+```text
 df = pd.DataFrame({
     "id":      [1, 2, 3],
     "name":    ["Alice", "Bob", "Charlie"],

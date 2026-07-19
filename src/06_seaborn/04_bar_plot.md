@@ -5,7 +5,7 @@ along with a confidence interval drawn as an error bar.
 
 Given:
 
-```
+```text
 df = pd.DataFrame({
     "dept":   ["eng", "eng", "eng", "sales", "sales", "sales", "hr", "hr", "hr"],
     "salary": [70000, 90000, 120000, 50000, 55000, 60000, 65000, 60000, 62000],

@@ -5,7 +5,7 @@ overlays the numeric values inside each cell.
 
 Given:
 
-```
+```text
 df = pd.DataFrame({
     "age":      [22, 38, 26, 35, 27, 54, 14, 4, 58, 20],
     "fare":     [7.25, 71.28, 7.92, 53.10, 8.05, 51.86, 30.07, 16.7, 26.55, 8.05],

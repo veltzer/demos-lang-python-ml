@@ -4,7 +4,7 @@
 
 Build a DataFrame holding monthly sales for a year:
 
-```
+```text
 df = pd.DataFrame({
     "month": ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
               "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],

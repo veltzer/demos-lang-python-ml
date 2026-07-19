@@ -5,7 +5,7 @@ browser, no separate library needed.
 
 Generate 300 points from three Gaussian clusters in 3-D:
 
-```
+```text
 import numpy as np
 
 rng = np.random.default_rng(0)

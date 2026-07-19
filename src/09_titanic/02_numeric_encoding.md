@@ -12,7 +12,7 @@ numeric features. Any string column needs an integer encoding first.
 
 1. Print the names of all non-numeric columns:
 
-   ```
+   ```text
    df.select_dtypes(exclude="number").columns
    ```
 
@@ -20,7 +20,7 @@ numeric features. Any string column needs an integer encoding first.
 
 2. Encode each as integer category codes:
 
-   ```
+   ```text
    df["Sex"]      = df["Sex"].astype("category").cat.codes
    df["Embarked"] = df["Embarked"].astype("category").cat.codes
    ```

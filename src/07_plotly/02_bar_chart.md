@@ -4,7 +4,7 @@
 
 Given:
 
-```
+```text
 df = pd.DataFrame({
     "fruit":    ["apples", "oranges", "bananas", "pears", "grapes"],
     "quantity": [23, 17, 35, 12, 28],

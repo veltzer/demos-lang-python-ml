@@ -6,7 +6,7 @@ This is the fastest way to scan a small numeric dataset for visible relationship
 
 Build a synthetic 3-feature dataset with two clusters:
 
-```
+```text
 import numpy as np
 
 rng = np.random.default_rng(0)

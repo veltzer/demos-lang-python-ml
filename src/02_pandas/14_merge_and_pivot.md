@@ -8,7 +8,7 @@ The two essential reshaping tools:
 
 Given:
 
-```
+```text
 employees = pd.DataFrame({
     "emp_id": [1, 2, 3, 4, 5],
     "name":   ["Alice", "Bob", "Charlie", "Dana", "Eve"],

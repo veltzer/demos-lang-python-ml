@@ -6,7 +6,7 @@ generate the same finite scatter.
 
 The original puzzle (drawn as ASCII):
 
-```
+```text
 	|
 	|
 	|

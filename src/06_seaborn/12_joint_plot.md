@@ -6,7 +6,7 @@ becomes a hexbin density plot, useful when the scatter is so dense that points o
 
 Generate 1000 correlated samples:
 
-```
+```text
 import numpy as np
 
 rng = np.random.default_rng(0)

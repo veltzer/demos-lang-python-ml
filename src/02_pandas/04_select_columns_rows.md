@@ -2,7 +2,7 @@
 
 Given:
 
-```
+```text
 df = pd.DataFrame(
     {
         "name":   ["Alice", "Bob", "Charlie", "Dana", "Eve"],

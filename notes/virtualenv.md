@@ -18,7 +18,7 @@ environment so each project has its own isolated set of installed packages.
 
 ## Linux
 
-```
+```text
 # install python3 and the venv module if you don't already have them
 sudo apt install python3 python3-venv python3-pip   # Debian/Ubuntu
 sudo dnf install python3 python3-pip                 # Fedora
@@ -52,7 +52,7 @@ should not be used for ML work — install one of:
 
 After that, the venv steps are identical to Linux:
 
-```
+```text
 cd ~/projects/demos-lang-python-ml
 python3 -m venv .venv
 source .venv/bin/activate
@@ -62,7 +62,7 @@ pip install numpy pandas matplotlib seaborn plotly scikit-learn psutil
 
 ## Windows
 
-```
+```text
 :: install Python from python.org/downloads/windows/ (check "Add Python to PATH" in
 :: the installer)
 
@@ -87,7 +87,7 @@ deactivate
 If PowerShell refuses to run the activate script with an execution-policy error, run
 once as admin:
 
-```
+```text
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
@@ -95,7 +95,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 After activation, this should print version numbers without error:
 
-```
+```text
 python -c "import numpy, pandas, matplotlib, seaborn, plotly, sklearn; \
            print(numpy.__version__, pandas.__version__, sklearn.__version__)"
 ```
@@ -105,7 +105,7 @@ python -c "import numpy, pandas, matplotlib, seaborn, plotly, sklearn; \
 Once a project works, freeze the exact versions to a file so others (and future-you) get
 the same setup:
 
-```
+```text
 pip freeze > requirements.txt          # write
 pip install -r requirements.txt        # reinstall later
 ```
@@ -115,7 +115,7 @@ pip install -r requirements.txt        # reinstall later
 [uv](https://github.com/astral-sh/uv) is a much faster modern replacement for `pip` +
 `venv`. If you're starting fresh, consider it:
 
-```
+```text
 curl -LsSf https://astral.sh/uv/install.sh | sh   # Linux/macOS
 uv venv
 source .venv/bin/activate

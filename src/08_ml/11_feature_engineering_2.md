@@ -7,7 +7,7 @@ quickly.
 
 ## The flags
 
-```
+```text
 f_embarked     # keep Embarked column (vs drop it)
 f_dummies      # one-hot encode Pclass / Embarked / Title
 f_drop         # drop high-cardinality columns (PassengerId, Name, Ticket, Cabin)

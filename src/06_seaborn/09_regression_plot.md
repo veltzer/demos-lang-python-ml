@@ -6,7 +6,7 @@ eyeball whether a linear relationship is plausible.
 
 Generate 100 noisy points from a linear model:
 
-```
+```text
 import numpy as np
 
 rng = np.random.default_rng(0)

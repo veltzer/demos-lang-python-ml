@@ -12,7 +12,7 @@ accuracy we get.
 
 1. Split into target and features:
 
-   ```
+   ```text
    y = df["Survived"]
    X = df.drop(columns="Survived")
    ```

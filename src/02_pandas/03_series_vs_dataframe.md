@@ -5,7 +5,7 @@ When you select multiple columns, you get a `DataFrame`.
 
 Given:
 
-```
+```text
 df = pd.DataFrame({
     "name":   ["Alice", "Bob", "Charlie"],
     "age":    [30, 25, 35],

@@ -23,7 +23,7 @@ Tasks:
 
 Hint:
 
-```
+```text
 fig.update_layout(updatemenus=[{
     "buttons": [
         {"label": "All", "method": "update", "args": [{"visible": [True, True, True]}]},

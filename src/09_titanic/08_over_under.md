@@ -31,13 +31,13 @@ For each of the three regimes below, fit `KNeighborsClassifier()`, predict on th
 unchanged `X_test`/`y_test`, and print accuracy plus `classification_report`:
 
 1. **Baseline (no resampling).** Fit on `X_train, y_train` directly. Label
-   `"=== Baseline (no resampling) ===" `.
+   `"=== Baseline (no resampling) ==="`.
 2. **Oversampling.** Combine `X_train` and `y_train` into one frame; split by class;
    `minority.sample(n=len(majority), replace=True)`; concatenate back. Print the new
-   training-set size and class counts. Fit and score. Label `"=== Oversampling ===" `.
+   training-set size and class counts. Fit and score. Label `"=== Oversampling ==="`.
 3. **Undersampling.** Same pattern but `majority.sample(n=len(minority))` (no
    replacement). Print the new size and counts. Fit and score. Label
-   `"=== Undersampling ===" `.
+   `"=== Undersampling ==="`.
 
 ## What to compare
 

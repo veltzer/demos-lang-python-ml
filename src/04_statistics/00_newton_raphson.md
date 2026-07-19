@@ -8,13 +8,13 @@ problems.
 
 The classic Newton-Raphson update for finding `x` such that `f(x) = 0`:
 
-```
+```text
 x_{n+1} = x_n - f(x_n) / f'(x_n)
 ```
 
 When `f'` is not provided analytically, approximate it with a centered difference:
 
-```
+```text
 f'(x) ≈ (f(x + dx) - f(x - dx)) / (2 * dx)
 ```
 
@@ -35,7 +35,7 @@ derivative `f''` (or, again, a numerical approximation).
 
 The update becomes:
 
-```
+```text
 x_{n+1} = x_n - f'(x_n) / f''(x_n)
 ```
 
