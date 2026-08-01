@@ -3,6 +3,7 @@
 """Solution to exercise 14: compare vectorized vs apply vs Python-loop timings."""
 
 import time
+from typing import cast
 import numpy as np
 import pandas as pd
 
@@ -28,7 +29,7 @@ def main() -> None:
 
     def loop() -> None:
         for i in range(df3.shape[0]):
-            df3.iat[i, 0] = abs(float(df3.iat[i, 0]))
+            df3.iat[i, 0] = abs(float(cast(float, df3.iat[i, 0])))
 
     time_it("python for-loop", loop)
 
