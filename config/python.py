@@ -2,7 +2,6 @@
 
 import config.shared
 
-
 install_requires: list[str] = [
     "scikit-learn",
     # "sklearn",

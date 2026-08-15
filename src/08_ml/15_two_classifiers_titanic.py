@@ -2,11 +2,11 @@
 
 """Solution to exercise 22: KNN and Logistic Regression on Titanic data."""
 
+import pandas as pd
+from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
-import pandas as pd
 
 SEED = 0
 

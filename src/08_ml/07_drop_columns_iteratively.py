@@ -2,9 +2,9 @@
 
 """Solution to exercise 17: cumulative column dropping on Titanic data."""
 
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import train_test_split
 import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
 
 X = pd.read_csv("data/titanic.csv")
 X.fillna(0, inplace=True)

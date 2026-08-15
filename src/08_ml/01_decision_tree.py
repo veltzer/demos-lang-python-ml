@@ -4,9 +4,9 @@
 Tecision tree learning
 """
 
-import sklearn.tree
-import sklearn.model_selection
 import pandas
+import sklearn.model_selection
+import sklearn.tree
 
 tbl = pandas.read_csv("data/titanic.csv")
 tbl.fillna(0, inplace=True)

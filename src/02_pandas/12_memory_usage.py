@@ -4,8 +4,9 @@
 
 import os
 import random
-import psutil
+
 import pandas as pd
+import psutil
 
 process = psutil.Process(os.getpid())
 print(process.memory_info().rss)

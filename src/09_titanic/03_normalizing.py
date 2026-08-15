@@ -6,9 +6,10 @@ for an algorithm that needs normalized data (e.g. KNN).
 """
 
 import random
+
 import numpy
-from sklearn.preprocessing import StandardScaler
 import pandas
+from sklearn.preprocessing import StandardScaler
 
 random.seed(0)
 numpy.random.seed(0)

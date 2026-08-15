@@ -6,11 +6,12 @@ This is an example of how to find which columns could be dropped
 
 import random
 from itertools import combinations
+
 import numpy
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
 import pandas
+from sklearn.metrics import accuracy_score
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
 
 random.seed(0)
 numpy.random.seed(0)

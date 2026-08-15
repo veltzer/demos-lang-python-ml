@@ -2,10 +2,10 @@
 
 """Solution to exercise 07: violinplot comparing three groups."""
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
-import matplotlib.pyplot as plt
 
 n = 200
 rng = np.random.default_rng(0)

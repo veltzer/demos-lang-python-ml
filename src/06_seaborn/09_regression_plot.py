@@ -2,10 +2,10 @@
 
 """Solution to exercise 10: regplot with linear fit and confidence band."""
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
-import matplotlib.pyplot as plt
 
 rng = np.random.default_rng(0)
 x = rng.uniform(0, 10, 100)

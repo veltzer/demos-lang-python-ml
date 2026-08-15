@@ -5,9 +5,9 @@ Unsupervised learning using the k nearest neighbour algorithm
 """
 
 import numpy.random
+import pandas
 import sklearn.model_selection
 import sklearn.neighbors
-import pandas
 
 # always get the same results...
 numpy.random.seed(5)

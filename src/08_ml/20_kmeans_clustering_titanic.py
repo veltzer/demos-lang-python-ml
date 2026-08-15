@@ -2,10 +2,10 @@
 
 """Solution to exercise 20: K-Means clustering on Titanic with elbow plot."""
 
-from sklearn.cluster import KMeans
-from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 import pandas as pd
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
 
 df = pd.read_csv("data/titanic.csv")
 df = df.drop(columns=["PassengerId", "Name", "Ticket", "Cabin"])

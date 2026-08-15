@@ -5,11 +5,12 @@ basic learning example
 """
 
 import random
+
 import numpy
-import sklearn.tree
+import pandas
 import sklearn.ensemble
 import sklearn.model_selection
-import pandas
+import sklearn.tree
 
 random.seed(5)
 numpy.random.seed(5)

@@ -2,9 +2,9 @@
 
 """Solution to exercise 14: train a decision tree, print it, and render it as a PNG."""
 
-from sklearn.tree import DecisionTreeClassifier, export_text, plot_tree
 import matplotlib.pyplot as plt
 import pandas as pd
+from sklearn.tree import DecisionTreeClassifier, export_text, plot_tree
 
 df = pd.read_csv("data/titanic.csv")
 df.fillna(0, inplace=True)

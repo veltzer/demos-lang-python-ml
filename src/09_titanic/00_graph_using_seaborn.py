@@ -5,10 +5,11 @@ basic learning example
 """
 
 import random
-import numpy
+
 import matplotlib.pyplot as plt
-import seaborn
+import numpy
 import pandas
+import seaborn
 
 random.seed(0)
 numpy.random.seed(0)

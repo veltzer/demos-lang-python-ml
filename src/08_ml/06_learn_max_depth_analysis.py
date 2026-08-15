@@ -4,9 +4,9 @@
 Learn and set a limit to the analysis
 """
 
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import train_test_split
 import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
 
 num_stability_runs=10
 for i in range(2, 40):

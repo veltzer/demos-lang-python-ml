@@ -2,10 +2,10 @@
 
 """Solution to exercise 16: linear regression on Titanic with 0.5 threshold."""
 
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
 import pandas as pd
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import accuracy_score
+from sklearn.model_selection import train_test_split
 
 df = pd.read_csv("data/titanic.csv")
 df = df.drop(columns=["Name", "Cabin", "Ticket", "PassengerId"])

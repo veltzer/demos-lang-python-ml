@@ -2,10 +2,10 @@
 
 """Solution to exercise 15: 2x2 grid demonstrating four theme+palette combos."""
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
-import matplotlib.pyplot as plt
 
 rng = np.random.default_rng(0)
 n = 60

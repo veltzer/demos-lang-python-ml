@@ -5,11 +5,11 @@ Another example of feature engineering
 """
 
 import numpy
+import pandas
 import sklearn.model_selection
+import sklearn.naive_bayes
 import sklearn.neighbors
 import sklearn.tree
-import sklearn.naive_bayes
-import pandas
 
 # features
 f_embarked=False

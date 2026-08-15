@@ -2,9 +2,9 @@
 
 """Solution to exercise 11: annotated correlation heatmap."""
 
+import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
-import matplotlib.pyplot as plt
 
 df = pd.DataFrame({
     "age": [22, 38, 26, 35, 27, 54, 14, 4, 58, 20],

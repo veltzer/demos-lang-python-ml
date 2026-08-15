@@ -2,8 +2,8 @@
 
 """Solution to exercise 10: render a 2-D function as an image with a colorbar."""
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 i = np.arange(100)[:, None]
 j = np.arange(100)[None, :]

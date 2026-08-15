@@ -4,9 +4,9 @@
 learning and measuring each column
 """
 
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import train_test_split
 import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
 
 tbl = pd.read_csv("data/titanic.csv")
 #Fillna

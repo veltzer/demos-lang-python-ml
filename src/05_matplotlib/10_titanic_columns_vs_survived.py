@@ -2,8 +2,8 @@
 
 """Solution to exercise 10: per-column plots vs Survived on Titanic data."""
 
-import pandas as pd
 import matplotlib.pyplot as plt
+import pandas as pd
 
 df = pd.read_csv("data/titanic.csv")
 

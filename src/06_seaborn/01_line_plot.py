@@ -2,10 +2,10 @@
 
 """Solution to exercise 02: lineplot with auto-aggregated confidence band."""
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
-import matplotlib.pyplot as plt
 
 rng = np.random.default_rng(0)
 xs = np.repeat(np.arange(10), 5)

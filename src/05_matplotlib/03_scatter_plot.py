@@ -2,8 +2,8 @@
 
 """Solution to exercise 04: scatter plot with per-point color and a colorbar."""
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 rng = np.random.default_rng(0)
 x = rng.normal(size=200)

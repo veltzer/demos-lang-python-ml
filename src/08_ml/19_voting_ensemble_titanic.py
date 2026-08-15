@@ -2,12 +2,12 @@
 
 """Solution to exercise 19: VotingClassifier ensemble of 3 diverse base models."""
 
+import pandas as pd
 from sklearn.ensemble import RandomForestClassifier, VotingClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import StandardScaler
-import pandas as pd
 
 df = pd.read_csv("data/titanic.csv")
 df = df.drop(columns=["Name", "Cabin", "Ticket", "PassengerId"])

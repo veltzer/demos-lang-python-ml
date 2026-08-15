@@ -2,11 +2,11 @@
 
 """Solution to exercise 18: SVM on Titanic with accuracy/precision/recall."""
 
-from sklearn.svm import SVC
+import pandas as pd
+from sklearn.metrics import accuracy_score, precision_score, recall_score
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import accuracy_score, precision_score, recall_score
-import pandas as pd
+from sklearn.svm import SVC
 
 df = pd.read_csv("data/titanic.csv")
 df = df.drop(columns=["Name", "Cabin", "Ticket", "PassengerId"])

@@ -2,10 +2,10 @@
 
 """Solution to exercise 09: scatterplot with categorical hue mapping."""
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
-import matplotlib.pyplot as plt
 
 rng = np.random.default_rng(0)
 n = 100

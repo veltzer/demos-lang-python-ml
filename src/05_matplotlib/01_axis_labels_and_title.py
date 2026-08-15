@@ -2,8 +2,8 @@
 
 """Solution to exercise 02: line plot with labels, title, and legend."""
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 x = np.arange(10)
 y = x ** 2

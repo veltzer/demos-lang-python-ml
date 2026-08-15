@@ -2,8 +2,8 @@
 
 """Solution to exercise 01: a basic line plot of y = x**2."""
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 x = np.arange(10)
 y = x ** 2

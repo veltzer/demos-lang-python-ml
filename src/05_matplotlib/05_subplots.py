@@ -2,8 +2,8 @@
 
 """Solution to exercise 06: 2x2 subplot grid with per-axes titles."""
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 x = np.linspace(0, 2 * np.pi, 100)
 fig, axes = plt.subplots(2, 2)

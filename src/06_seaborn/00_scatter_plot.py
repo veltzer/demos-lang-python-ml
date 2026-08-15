@@ -2,9 +2,9 @@
 
 """Solution to exercise 01: scatterplot from a DataFrame."""
 
+import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
-import matplotlib.pyplot as plt
 
 df = pd.DataFrame({
     "x": [1, 2, 3, 4, 5, 6, 7, 8],

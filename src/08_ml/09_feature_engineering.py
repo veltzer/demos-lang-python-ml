@@ -4,9 +4,9 @@
 an example of feature engineering
 """
 
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import train_test_split
 import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
 
 o_tbl = pd.read_csv("data/titanic.csv")
 #o_tbl['Age'].fillna(o_tbl['Age'].mean(), inplace=True)

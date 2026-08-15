@@ -5,14 +5,15 @@ Show how to make your machine learning script deterministic by setting the rando
 """
 
 import random
-from sklearn.tree import DecisionTreeClassifier
+
+import numpy.random
+import pandas as pd
+
 # from sklearn.linear_model import LogisticRegression
 # from sklearn.neighbors import KNeighborsClassifier
 # from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
-import numpy.random
-import pandas as pd
-
+from sklearn.tree import DecisionTreeClassifier
 
 random.seed(0)
 numpy.random.seed(0)

@@ -2,7 +2,7 @@
 
 """Solution: Newton-Raphson for roots and for minima (via derivative)."""
 
-from typing import Callable
+from collections.abc import Callable
 
 
 def newton_raphson_root(

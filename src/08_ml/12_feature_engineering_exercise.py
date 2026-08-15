@@ -3,8 +3,8 @@
 """Solution to exercise 16: compare baseline vs. two engineered features on Titanic."""
 
 import pandas as pd
-from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
 
 
 def score(x: pd.DataFrame, y: pd.Series, seed: int = 0) -> float:

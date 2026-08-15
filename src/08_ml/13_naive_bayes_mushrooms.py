@@ -2,10 +2,10 @@
 
 """Solution to exercise 19: Bernoulli Naive Bayes on a synthetic mushroom dataset."""
 
-from sklearn.model_selection import train_test_split
-from sklearn.naive_bayes import BernoulliNB
 import numpy as np
 import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import BernoulliNB
 
 rng = np.random.default_rng(0)
 n = 2000

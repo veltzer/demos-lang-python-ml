@@ -2,9 +2,9 @@
 
 """Solution to exercise 04: overlay two filled KDE plots."""
 
+import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
-import matplotlib.pyplot as plt
 
 rng = np.random.default_rng(0)
 a = rng.normal(loc=0.0, scale=1.0, size=1000)

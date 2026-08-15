@@ -2,9 +2,9 @@
 
 """Solution to exercise 08: countplot of category frequencies."""
 
+import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
-import matplotlib.pyplot as plt
 
 df = pd.DataFrame({
     "color": [

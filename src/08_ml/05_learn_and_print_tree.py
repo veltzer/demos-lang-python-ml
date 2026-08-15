@@ -4,10 +4,10 @@
 Learn and print the decision tree which is the result of the learning
 """
 
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import train_test_split
-import sklearn.tree
 import pandas
+import sklearn.tree
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
 
 ctor = DecisionTreeClassifier
 tbl = pandas.read_csv("data/titanic.csv")

@@ -2,8 +2,8 @@
 
 """Solution to exercise 08: three curves with distinct colors, linestyles, markers."""
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 x = np.linspace(0, 10, 50)
 

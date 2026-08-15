@@ -6,6 +6,7 @@ The data is the Titanic data.
 """
 
 import random
+
 import numpy
 import pandas
 
