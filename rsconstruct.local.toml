@@ -6,3 +6,19 @@
 # mode rejects as "duplicate module". Per-file invocation sidesteps that.
 [processor.mypy]
 batch = false
+
+# Runtime deps so CI installs what the exercises import; without them pylint
+# reports import-error and mypy cannot resolve the modules.
+[dependencies]
+pip = [
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "pandas-stubs",
+    "plotly",
+    "polars",
+    "psutil",
+    "types-psutil",
+    "seaborn",
+    "scikit-learn",
+]
