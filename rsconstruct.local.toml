@@ -10,3 +10,22 @@
 # suggested __init__.py fix is unavailable.
 [processor.mypy]
 batch = false
+
+# Runtime deps so CI installs what the demos import (pylint/mypy resolve
+# them) -- the demos-cloud-aws pattern. plotly ships no py.typed and its
+# community stubs (plotly-stubs) are stricter than the runtime accepts (they
+# reject a str path to write_html that plotly happily takes), so plotly is
+# left unstubbed and its imports are ignored for typing rather than adding a
+# stub package that would fail correct demo code.
+[dependencies]
+pip = [
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "pandas-stubs",
+    "plotly",
+    "polars",
+    "psutil",
+    "scikit-learn",
+    "seaborn",
+]
