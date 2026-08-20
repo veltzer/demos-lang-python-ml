@@ -28,4 +28,5 @@ pip = [
     "psutil",
     "scikit-learn",
     "seaborn",
+    "types-psutil",
 ]
