@@ -10,6 +10,13 @@
 # suggested __init__.py fix is unavailable.
 [processor.mypy]
 batch = false
+# batch = false means one mypy process per file, and parallel mypy processes
+# share one .mypy_cache. mypy's cache is not safe under concurrent writers:
+# when the cache is cold (every CI run) the racing processes flakily die with
+# "INTERNAL ERROR" (reproducible locally with 4 parallel mypy runs on a cold
+# cache). max_jobs = 1 serializes only the mypy invocations -- same checks,
+# warm-cache runs are ~1s/file -- while other processors stay parallel.
+max_jobs = 1
 
 # Runtime deps so CI installs what the demos import (pylint/mypy resolve
 # them) -- the demos-cloud-aws pattern. plotly ships no py.typed and its
