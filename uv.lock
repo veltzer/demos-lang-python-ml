@@ -142,21 +142,21 @@ dependencies = [
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "pandas" },
-    { name = "pandas-stubs" },
     { name = "plotly" },
     { name = "polars" },
     { name = "psutil" },
     { name = "scikit-learn" },
     { name = "seaborn" },
-    { name = "types-psutil" },
 ]
 
 [package.dev-dependencies]
 dev = [
     { name = "mypy" },
+    { name = "pandas-stubs" },
     { name = "pylint" },
     { name = "pytest" },
     { name = "ruff" },
+    { name = "types-psutil" },
 ]
 
 [package.metadata]
@@ -164,21 +164,21 @@ requires-dist = [
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "pandas" },
-    { name = "pandas-stubs" },
     { name = "plotly" },
     { name = "polars" },
     { name = "psutil" },
     { name = "scikit-learn" },
     { name = "seaborn" },
-    { name = "types-psutil" },
 ]
 
 [package.metadata.requires-dev]
 dev = [
     { name = "mypy" },
+    { name = "pandas-stubs" },
     { name = "pylint" },
     { name = "pytest" },
     { name = "ruff" },
+    { name = "types-psutil" },
 ]
 
 [[package]]
