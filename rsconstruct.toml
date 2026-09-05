@@ -5,7 +5,8 @@
 [analyzer.python]
 
 [processor.rumdl]
-src_dirs = ["src", "notes"]
+src_dirs = ["src", "notes", "word2vec-app"]
+src_files = ["README.md"]
 
 [processor.zspell]
 src_dirs = ["src", "notes"]
@@ -35,3 +36,8 @@ src_dirs = ["."]
 # lint the GitHub Actions workflow files with actionlint
 [processor.actionlint]
 src_dirs = [".github/workflows"]
+
+# ─── shell ───────────────────────────────────────────────────────────────────
+
+[processor.shellcheck]
+src_dirs = ["word2vec-app"]
