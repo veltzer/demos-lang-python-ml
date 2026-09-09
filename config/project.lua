@@ -1,6 +1,6 @@
 -- project definitions
-NAME = "demos-python-ml"
-DESCRIPTION_SHORT = "Demos machine learning in the python language"
+NAME = "demos-lang-python-ml"
+DESCRIPTION_SHORT = "Demos of machine learning in the python language"
 KEYWORDS = {
     "machine-learning",
     "python",
