@@ -52,7 +52,7 @@ for c in fe_columns_org:
         X['Ticket_bool'] = X['Ticket'].str.contains('[a-zA-Z]').astype(int)
         X['count_Embarked'] = X.groupby('Embarked')['Embarked'].transform('count')
         X['Cabin_first_letter'] = X['Cabin'].str[:1].fillna(0)
-        X['ticket_num'] = X['Ticket'].str.split().str[-1].replace('LINE', 0).astype('int64')
+        X['ticket_num'] = X['Ticket'].str.split().str[-1].replace('LINE', '0').astype('int64')
         X['ticket_letters'] = X['Ticket'].str.split().str[0].str.replace(r'\d+', '',
                  regex=True).replace('', 'Z', regex=True).replace(r'\.', '',regex=True).replace('/', '', regex=True)
         X['Cabin_number'] = X['Cabin'].str[1:].fillna(0)
