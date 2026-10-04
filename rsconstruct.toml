@@ -8,10 +8,10 @@ reject_dot_src_dirs = true
 
 [analyzer.python]
 
-[processor.luacheck]
+[processor.checker.luacheck]
 src_dirs = ["config"]
 
-[processor.tera]
+[processor.generator.tera]
 src_dirs = ["tera.templates"]
 dep_auto = [
 	"config/project.lua",
@@ -19,20 +19,20 @@ dep_auto = [
 	"config/version.lua",
 ]
 
-[processor.rumdl]
+[processor.checker.rumdl]
 src_dirs = ["src", "notes", "word2vec-app"]
 src_files = ["README.md"]
 
-[processor.zspell]
+[processor.checker.zspell]
 src_dirs = ["src", "notes"]
 
 # ─── python ──────────────────────────────────────────────────────────────────
 
-[processor.ruff]
+[processor.checker.ruff]
 src_dirs = ["src"]
 
 
-[processor.mypy]
+[processor.checker.mypy]
 src_dirs = ["src"]
 batch = false
 # batch = false means one mypy process per file, and parallel mypy processes
@@ -43,14 +43,14 @@ batch = false
 # warm-cache runs are ~1s/file -- while other processors stay parallel.
 max_jobs = 1
 
-[processor.taplo]
+[processor.checker.taplo]
 src_files = [".rumdl.toml", "pyproject.toml", "rsconstruct.toml"]
 
 # lint the GitHub Actions workflow files with actionlint
-[processor.actionlint]
+[processor.checker.actionlint]
 src_dirs = [".github/workflows"]
 
 # ─── shell ───────────────────────────────────────────────────────────────────
 
-[processor.shellcheck]
+[processor.checker.shellcheck]
 src_dirs = ["word2vec-app"]
