@@ -44,5 +44,5 @@ src_dirs = [".github/workflows"]
 
 # ─── shell ───────────────────────────────────────────────────────────────────
 
-[processor.checker.shellcheck]
+[processor.checker.ishellcheck]
 src_dirs = ["word2vec-app"]
