@@ -18,6 +18,7 @@ version: 0.0.1
 ## build
 
 ![build](https://github.com/veltzer/demos-lang-python-ml/workflows/build/badge.svg)
+
 ## Number of exercises
 
 Currently there are 129 exercises in this repo.
