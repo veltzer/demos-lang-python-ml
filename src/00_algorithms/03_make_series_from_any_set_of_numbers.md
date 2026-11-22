@@ -21,6 +21,7 @@ fun(x) = 1    * (x-2)(x-3) / ((1-2)(1-3))
 ```
 
 Simplifying the denominators:
+
 - first term: `(x-2)(x-3) / 2`
 - second term: `(x-1)(x-3) * (-4)`
 - third term: `(x-1)(x-2) * (1979/2)`

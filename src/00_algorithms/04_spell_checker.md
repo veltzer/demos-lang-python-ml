@@ -23,6 +23,7 @@ dictionary expands to ~750,000 entries — still tiny.
 Index: a dict mapping each *letter-dropped variant* to the original word it came from.
 
 For `night`:
+
 - `ight → night`
 - `nght → night`
 - `niht → night`

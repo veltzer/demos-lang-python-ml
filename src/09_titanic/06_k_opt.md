@@ -30,6 +30,7 @@ Odd `k` avoids the issue.
 ## Extending the sweep
 
 The provided range is short for demonstration. In a real evaluation you would:
+
 - sweep a wider range (e.g. `range(1, 41, 2)`),
 - average over several train/test splits at each `k` to smooth out noise,
 - and plot the resulting curve.
