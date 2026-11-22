@@ -5,7 +5,7 @@
 
 description: Demos of machine learning in the python language
 
-project website: https://veltzer.github.io/demos-lang-python-ml
+project website: <https://veltzer.github.io/demos-lang-python-ml>
 
 author: Mark Veltzer
 
