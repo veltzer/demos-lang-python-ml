@@ -1,8 +1,8 @@
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.tree import export_text
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import precision_score
+from sklearn.model_selection import train_test_split
+from sklearn.tree import export_text
 
 df = pd.read_csv("titanic.csv")
 
@@ -31,7 +31,7 @@ print(f"Precision: {precision:.4f}")
 print(f"Number of trees: {len(clf.estimators_)}")
 print()
 print("Feature importances:")
-for name, imp in sorted(zip(feature_cols, clf.feature_importances_), key=lambda x: -x[1]):
+for name, imp in sorted(zip(feature_cols, clf.feature_importances_, strict=True), key=lambda x: -x[1]):
     print(f"  {name:10s} {imp:.4f}")
 print()
 for i, tree in enumerate(clf.estimators_):

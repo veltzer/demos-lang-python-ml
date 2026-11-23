@@ -1,7 +1,7 @@
 import pandas as pd
-from sklearn.tree import DecisionTreeClassifier, export_text
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import precision_score
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier, export_text
 
 df = pd.read_csv("titanic.csv")
 

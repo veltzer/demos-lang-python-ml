@@ -43,8 +43,8 @@ else:
 
 # Fill missing Fare based on mean ticket price for each Pclass
 if f_fare:
-    pclassFareMean = tbl[tbl["Fare"] > 0].groupby(["Pclass", "Embarked"])["Fare"].mean()
-    for item, fare in pclassFareMean.items():
+    pclass_fare_mean = tbl[tbl["Fare"] > 0].groupby(["Pclass", "Embarked"])["Fare"].mean()
+    for item, fare in pclass_fare_mean.items():
         # This 'isinstance' check acts as a type guard for mypy.
         # It confirms that 'item' is a tuple, making it indexable.
         if isinstance(item, tuple):
@@ -52,16 +52,16 @@ if f_fare:
 
 # Create and reduce Title column
 if f_title:
-    titleDictionary = {"Master": "Master", "Miss": "Miss", "Mlle": "Miss", "Mme": "Ms", "Ms": "Ms", "Mr": "Mr",
+    title_dictionary = {"Master": "Master", "Miss": "Miss", "Mlle": "Miss", "Mme": "Ms", "Ms": "Ms", "Mr": "Mr",
                        "Countess": "Ms", "Mrs": "Ms", "Jonkheer": "Mr", "Don": "Mr", "Dr": "Mr", "Rev": "Mr", "Lady": "Ms",
                        "Major": "Senior", "Sir": "Senior", "Col": "Senior", "Capt": "Senior"}
     tbl["Title"] = tbl["Name"].str.extract(r"([A-Za-z]+)\.", expand=True)
-    tbl = tbl.replace({"Title": titleDictionary})
+    tbl = tbl.replace({"Title": title_dictionary})
 
 # Fill missing Age based on mean age for each title
 if f_age and f_title:
-    titleAgeMean = tbl[tbl["Age"] > 0].groupby("Title")["Age"].mean()
-    for title, age in titleAgeMean.items():
+    title_age_mean = tbl[tbl["Age"] > 0].groupby("Title")["Age"].mean()
+    for title, age in title_age_mean.items():
         tbl.loc[(tbl["Title"] == title) & (tbl["Age"].isnull()), "Age"] = age
 
 # Add new features IsAlone
@@ -88,8 +88,8 @@ Y = tbl[["Survived"]]
 
 X_train, X_test, Y_train, Y_test = sklearn.model_selection.train_test_split(X, Y)
 
-treeClassifier = sklearn.tree.DecisionTreeClassifier(max_depth=15)
-treeClassifier.fit(X_train, Y_train.values.ravel())
-score_train = treeClassifier.score(X_train, Y_train)
-score_test = treeClassifier.score(X_test, Y_test)
+tree_classifier = sklearn.tree.DecisionTreeClassifier(max_depth=15)
+tree_classifier.fit(X_train, Y_train.values.ravel())
+score_train = tree_classifier.score(X_train, Y_train)
+score_test = tree_classifier.score(X_test, Y_test)
 print(f"Decision Tree Train (depth={15}): {score_train}, Test: {score_test}")

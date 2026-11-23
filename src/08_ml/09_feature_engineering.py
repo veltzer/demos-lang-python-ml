@@ -29,9 +29,9 @@ def run_it(title):
     num_runs=40
     for _ in range(num_runs):
         alg = DecisionTreeClassifier()
-        X_train, X_test, y_train, y_test = train_test_split(X, Y)
-        alg.fit(X_train, y_train)
-        score += float(alg.score(X_test, y_test))
+        x_train, x_test, y_train, y_test = train_test_split(X, Y)
+        alg.fit(x_train, y_train)
+        score += float(alg.score(x_test, y_test))
     print(f"avg {title} is {score/num_runs}")
 
 run_it("before fe")

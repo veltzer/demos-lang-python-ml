@@ -1,9 +1,9 @@
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import precision_score, accuracy_score, recall_score, f1_score
+from sklearn.preprocessing import StandardScaler
+from sklearn.tree import DecisionTreeClassifier
 
 df = pd.read_csv("titanic.csv")
 df = df.drop(columns=["PassengerId", "Name", "Ticket", "Cabin"])
@@ -45,6 +45,6 @@ print()
 report("Decision Tree (max_depth=3)", y_test, y_pred_dt)
 print()
 print("Logistic Regression coefficients (on standardized features):")
-for name, coef in sorted(zip(feature_cols, logreg.coef_[0]), key=lambda x: -abs(x[1])):
+for name, coef in sorted(zip(feature_cols, logreg.coef_[0], strict=True), key=lambda x: -abs(x[1])):
     print(f"  {name:10s} {coef:+.4f}")
 print(f"  intercept  {logreg.intercept_[0]:+.4f}")

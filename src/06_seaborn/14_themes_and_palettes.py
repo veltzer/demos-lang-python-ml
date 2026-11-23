@@ -2,6 +2,8 @@
 
 """Solution to exercise 15: 2x2 grid demonstrating four theme+palette combos."""
 
+from typing import Literal
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -15,7 +17,7 @@ df = pd.DataFrame({
     "label": ["A"] * n + ["B"] * n + ["C"] * n,
 })
 
-combos = [
+combos: list[tuple[Literal["dark", "darkgrid", "ticks", "white", "whitegrid"], str]] = [
     ("darkgrid", "deep"),
     ("whitegrid", "pastel"),
     ("ticks", "colorblind"),
@@ -23,7 +25,7 @@ combos = [
 ]
 
 fig, axes = plt.subplots(2, 2, figsize=(10, 8))
-for ax, (style, palette) in zip(axes.flat, combos):
+for ax, (style, palette) in zip(axes.flat, combos, strict=True):
     sns.set_theme(style=style, palette=palette)
     sns.scatterplot(data=df, x="x", y="y", hue="label", ax=ax)
     ax.set_title(f"{style} + {palette}")

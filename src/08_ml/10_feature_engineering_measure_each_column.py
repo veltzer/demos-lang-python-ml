@@ -17,7 +17,7 @@ tbl['Sex'] = tbl['Sex'].replace('male', 0).replace('female', 1)
 
 i_num = 20
 score: float = 0
-for i in range(i_num):
+for _ in range(i_num):
     #X = tbl.drop(['Survived', 'PassengerId', 'Name', 'Ticket', 'Cabin'], axis=1) #score about 0.77
     X = tbl.drop(['Survived', 'PassengerId', 'Name', 'Cabin'], axis=1) #score about 0.82
     Y = tbl['Survived']
@@ -42,7 +42,7 @@ for c in fe_columns_org:
     fe_columns = fe_columns_org.copy()
     fe_columns.remove(c) # in order to drop remaining columns
     score = 0
-    for i in range(i_num):
+    for _ in range(i_num):
         X = tbl
         X['MartialStatus'] = X['Name'].str.split(',').str[1].str.split().str[0].str.strip()
         X['LastName'] = X['Name'].str.split(',').str[0]
@@ -58,7 +58,7 @@ for c in fe_columns_org:
         X['Cabin_number'] = X['Cabin'].str[1:].fillna(0)
         X['ticket_cnt'] = X.groupby('Ticket')['Ticket'].transform('count')
 
-        X = X.drop(['Survived', 'PassengerId', 'Name', 'Cabin'] + fe_columns, axis=1)
+        X = X.drop(['Survived', 'PassengerId', 'Name', 'Cabin', *fe_columns], axis=1)
         Y = tbl['Survived']
 
         X_d = pd.get_dummies(X)

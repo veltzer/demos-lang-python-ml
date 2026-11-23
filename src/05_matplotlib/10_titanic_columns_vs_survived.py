@@ -13,13 +13,13 @@ categorical_cols = ["Sex", "Embarked"]
 fig, axes = plt.subplots(2, 4, figsize=(18, 8))
 axes_flat = axes.flatten()
 
-for ax, col in zip(axes_flat, numeric_cols):
+for ax, col in zip(axes_flat, numeric_cols, strict=False):
     df[df["Survived"] == 0][col].plot.hist(ax=ax, alpha=0.5, label="died", bins=20)
     df[df["Survived"] == 1][col].plot.hist(ax=ax, alpha=0.5, label="survived", bins=20)
     ax.set_title(col)
     ax.legend()
 
-for ax, col in zip(axes_flat[len(numeric_cols):], categorical_cols):
+for ax, col in zip(axes_flat[len(numeric_cols):], categorical_cols, strict=False):
     rates = df.groupby(col)["Survived"].mean()
     rates.plot.bar(ax=ax)
     ax.set_title(f"survival rate by {col}")

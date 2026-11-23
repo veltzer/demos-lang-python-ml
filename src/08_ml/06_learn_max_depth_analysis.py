@@ -12,7 +12,7 @@ num_stability_runs=10
 for i in range(2, 40):
     score: float = 0
     score_train: float = 0
-    for j in range(num_stability_runs):
+    for _ in range(num_stability_runs):
         tbl = pd.read_csv("data/titanic.csv")
         tbl.fillna(0, inplace=True)
 

@@ -15,6 +15,7 @@ is just "word f1 f2 ... fN" per line, which numpy parses directly.
 
 import argparse
 import sys
+
 import numpy as np
 
 
@@ -38,7 +39,7 @@ class Embeddings:
     def load(cls, path, limit=None):
         """Load a GloVe-format file. `limit` caps the vocabulary for speed."""
         words, rows = [], []
-        with open(path, "r", encoding="utf-8") as fh:
+        with open(path, encoding="utf-8") as fh:
             for n, line in enumerate(fh):
                 if limit is not None and n >= limit:
                     break
@@ -85,7 +86,7 @@ class Embeddings:
         for w in (a, b, c):
             if w not in self.index:
                 raise KeyError(w)
-        target = self.vec(b) - self.vec(a) + self.vec(c)
+        target = self.vectors[self.index[b]] - self.vectors[self.index[a]] + self.vectors[self.index[c]]
         target = target / (np.linalg.norm(target) or 1e-9)
         sims = self.unit @ target
         given = {a, b, c}
@@ -104,7 +105,7 @@ class Embeddings:
         present = [w for w in words if w in self.index]
         if len(present) < 3:
             raise ValueError("need at least 3 in-vocabulary words")
-        mat = np.vstack([self._unit(w) for w in present])
+        mat = np.vstack([self.unit[self.index[w]] for w in present])
         sims = mat @ mat.T                       # pairwise cosine
         mean_sim = (sims.sum(axis=1) - 1) / (len(present) - 1)
         return present[int(np.argmin(mean_sim))]
@@ -155,10 +156,13 @@ def main():
     pn.add_argument("-k", type=int, default=10)
 
     ps = sub.add_parser("similarity", help="cosine similarity of two words")
-    ps.add_argument("a"); ps.add_argument("b")
+    ps.add_argument("a")
+    ps.add_argument("b")
 
     pa = sub.add_parser("analogy", help="a : b :: c : ?")
-    pa.add_argument("a"); pa.add_argument("b"); pa.add_argument("c")
+    pa.add_argument("a")
+    pa.add_argument("b")
+    pa.add_argument("c")
     pa.add_argument("-k", type=int, default=5)
 
     po = sub.add_parser("odd", help="odd one out")
