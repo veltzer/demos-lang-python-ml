@@ -11,9 +11,9 @@ from sklearn.tree import DecisionTreeClassifier
 o_tbl = pd.read_csv("data/titanic.csv")
 #o_tbl['Age'].fillna(o_tbl['Age'].mean(), inplace=True)
 #o_tbl['Cabin'].fillna(0, inplace=True)
-o_tbl['Embarked'].fillna('S', inplace=True)
+o_tbl['Embarked'] = o_tbl['Embarked'].fillna('S')
 o_tbl['Sex'] = o_tbl['Sex'].replace('male', 0).replace('female', 1)
-o_tbl.fillna(0, inplace=True)
+o_tbl = o_tbl.fillna(0)
 tbl=o_tbl.drop([
     #'Embarked',
     'PassengerId',

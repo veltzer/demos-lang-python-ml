@@ -7,14 +7,12 @@ basic learning example
 import random
 
 import matplotlib.pyplot as plt
-import numpy
-import pandas
-import seaborn
+import pandas as pd
+import seaborn as sns
 
 random.seed(0)
-numpy.random.seed(0)
 
-df = pandas.read_csv("data/titanic.csv")
+df = pd.read_csv("data/titanic.csv")
 
 # seaborn.regplot(x=df['Age'], y=df['Survived'])
 # plt.show()
@@ -26,5 +24,5 @@ df = pandas.read_csv("data/titanic.csv")
 # plt.show()
 
 df['Survived_Sex'] = df['Survived'].astype(str) + '_' + df['Sex']
-seaborn.histplot(df, x='Age', hue='Survived_Sex', multiple='dodge')
+sns.histplot(df, x='Age', hue='Survived_Sex', multiple='dodge')
 plt.show()

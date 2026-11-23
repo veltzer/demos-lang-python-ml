@@ -14,7 +14,7 @@ for i in range(2, 40):
     score_train: float = 0
     for _ in range(num_stability_runs):
         tbl = pd.read_csv("data/titanic.csv")
-        tbl.fillna(0, inplace=True)
+        tbl = tbl.fillna(0)
 
         X = tbl.drop(["Survived"], axis=1,)
         Y = tbl[["Survived"]]

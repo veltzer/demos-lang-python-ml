@@ -7,7 +7,7 @@ trying to learn with random results
 # from sklearn.linear_model import LogisticRegression
 # from sklearn.neighbors import KNeighborsClassifier
 # from sklearn.svm import SVC
-import numpy.random
+import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
@@ -15,10 +15,11 @@ from sklearn.tree import DecisionTreeClassifier
 ctor = DecisionTreeClassifier
 
 tbl = pd.read_csv("data/titanic.csv")
-tbl.fillna(0, inplace=True)
+tbl = tbl.fillna(0)
 
 tbl = tbl.drop(["Survived"], axis=1,)
-tbl['Survived'] = numpy.random.choice([0, 1], tbl.shape[0])
+rng = np.random.default_rng()
+tbl['Survived'] = rng.choice([0, 1], tbl.shape[0])
 
 X = tbl.drop(["Survived"], axis=1,)
 Y = tbl[["Survived"]]

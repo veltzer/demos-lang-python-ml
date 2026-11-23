@@ -4,19 +4,19 @@
 Learn and print the decision tree which is the result of the learning
 """
 
-import pandas
+import pandas as pd
 import sklearn.tree
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 
 ctor = DecisionTreeClassifier
-tbl = pandas.read_csv("data/titanic.csv")
-tbl.fillna(0, inplace=True)
-tbl.drop(["Name", "Embarked", "Cabin", "Ticket"], inplace=True, axis=1)
+tbl = pd.read_csv("data/titanic.csv")
+tbl = tbl.fillna(0)
+tbl = tbl.drop(["Name", "Embarked", "Cabin", "Ticket"], axis=1)
 X = tbl.drop(["Survived"], axis=1,)
 Y = tbl[["Survived"]]
-X = pandas.get_dummies(X)
-Y = pandas.get_dummies(Y)
+X = pd.get_dummies(X)
+Y = pd.get_dummies(Y)
 X_train, X_test, y_train, y_test = train_test_split(X, Y)
 alg = ctor()
 alg.fit(X_train, y_train)

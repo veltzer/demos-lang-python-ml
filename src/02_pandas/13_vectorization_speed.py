@@ -18,7 +18,7 @@ def time_it(label: str, func) -> None:
 
 def main() -> None:
     n = 1_000_000
-    df = pd.DataFrame({0: pd.Series(np.random.randn(n))})
+    df = pd.DataFrame({0: pd.Series(np.random.default_rng().standard_normal(n))})
 
     df1 = df.copy()
     time_it("vectorized .abs()", df1[0].abs)
@@ -30,7 +30,7 @@ def main() -> None:
 
     def loop() -> None:
         for i in range(df3.shape[0]):
-            df3.iat[i, 0] = abs(float(cast(float, df3.iat[i, 0])))
+            df3.iloc[i, 0] = abs(float(cast(float, df3.iloc[i, 0])))
 
     time_it("python for-loop", loop)
 

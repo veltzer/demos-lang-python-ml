@@ -38,5 +38,5 @@ km = KMeans(n_clusters=best_k, random_state=0, n_init=10)
 labels = km.fit_predict(x_scaled)
 df_with_clusters = features.copy()
 df_with_clusters["cluster"] = labels
-df_with_clusters["Survived"] = survived.values
+df_with_clusters["Survived"] = survived.to_numpy()
 print(df_with_clusters.groupby("cluster")["Survived"].agg(["mean", "count"]))

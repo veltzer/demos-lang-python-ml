@@ -4,12 +4,12 @@
 Tecision tree learning
 """
 
-import pandas
+import pandas as pd
 import sklearn.model_selection
 import sklearn.tree
 
-tbl = pandas.read_csv("data/titanic.csv")
-tbl.fillna(0, inplace=True)
+tbl = pd.read_csv("data/titanic.csv")
+tbl = tbl.fillna(0)
 
 X = tbl.drop(["Survived"], axis=1,)
 Y = tbl[["Survived"]]
@@ -19,7 +19,7 @@ X = X.drop(["PassengerId","Name","Cabin", "Ticket"], axis=1,)
 
 # turn all columns numeric, if a column is not numeric replace it with 0/1 columns
 # that represent it's various states. Could produce a lot of columns...
-X = pandas.get_dummies(X)
+X = pd.get_dummies(X)
 # print(X.shape)
 # print(X)
 

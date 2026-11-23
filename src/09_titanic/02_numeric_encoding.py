@@ -8,13 +8,11 @@ numeric data (e.g. KNN).
 
 import random
 
-import numpy
-import pandas
+import pandas as pd
 
 random.seed(0)
-numpy.random.seed(0)
 
-df = pandas.read_csv("data/titanic_clean.csv")
+df = pd.read_csv("data/titanic_clean.csv")
 
 # show all columns which are non numeric
 

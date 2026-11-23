@@ -13,5 +13,5 @@ df = pd.DataFrame({
 })
 
 df["sex_num"] = np.where(df["sex"] == "male", 0, 1)
-df.drop("sex", axis=1, inplace=True)
+df = df.drop("sex", axis=1)
 print(df.corr())

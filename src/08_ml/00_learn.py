@@ -6,16 +6,14 @@ basic learning example
 
 import random
 
-import numpy
-import pandas
+import pandas as pd
 import sklearn.ensemble
 import sklearn.model_selection
 import sklearn.tree
 
 random.seed(5)
-numpy.random.seed(5)
 
-tbl = pandas.read_csv("data/titanic.csv")
+tbl = pd.read_csv("data/titanic.csv")
 # tbl.fillna(0, inplace=True)
 
 X = tbl.drop(["Survived"], axis=1,)
@@ -24,11 +22,11 @@ Y = tbl[["Survived"]]
 # turn all columns numeric, if a column is not numeric replace it with 0/1 columns
 # that represent it's various states. Could produce a lot of columns...
 # print(X)
-X = pandas.get_dummies(X)
+X = pd.get_dummies(X)
 # print(X)
 
 # split the data to train and test
-X_train, X_test, Y_train, Y_test = sklearn.model_selection.train_test_split(X, Y)
+X_train, X_test, Y_train, Y_test = sklearn.model_selection.train_test_split(X, Y, random_state=5)
 
 alg = sklearn.tree.DecisionTreeClassifier(max_depth=4)
 # alg = sklearn.ensemble.RandomForestClassifier()

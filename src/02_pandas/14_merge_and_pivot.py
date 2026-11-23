@@ -21,7 +21,7 @@ sales = pd.DataFrame({
     "revenue": [100, 150, 80, 90, 200, 180],
 })
 
-merged = pd.merge(employees, departments, on="dept_id", how="inner")
+merged = employees.merge(departments, on="dept_id", how="inner")
 print(merged)
 
 pivot = sales.pivot_table(index="name", columns="quarter", values="revenue")

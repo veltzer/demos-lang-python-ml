@@ -7,13 +7,11 @@ The data is the Titanic data.
 
 import random
 
-import numpy
-import pandas
+import pandas as pd
 
 random.seed(0)
-numpy.random.seed(0)
 
-df = pandas.read_csv("data/titanic.csv")
+df = pd.read_csv("data/titanic.csv")
 
 print(f"total number of rows is {df.shape[0]}...")
 print(df.isna().sum()[df.isna().sum() > 0])

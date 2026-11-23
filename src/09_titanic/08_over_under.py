@@ -6,16 +6,14 @@ This is an example of how to over-sample and under-sample using the titanic data
 
 import random
 
-import numpy
-import pandas
+import pandas as pd
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 
 random.seed(0)
-numpy.random.seed(0)
 
-df = pandas.read_csv("data/titanic_normalized.csv")
+df = pd.read_csv("data/titanic_normalized.csv")
 
 # y = target column
 y = df["Survived"]
@@ -24,7 +22,7 @@ y = df["Survived"]
 X = df.drop(columns="Survived")
 
 # Split data
-X_train, X_test, y_train, y_test = train_test_split(X, y)
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
 print(y_train.value_counts())
 
 # Baseline - no resampling
@@ -36,11 +34,11 @@ print(f"accuracy is {accuracy_score(y_test, y_pred)}")
 print(classification_report(y_test, y_pred))
 
 # Oversampling - duplicate minority class samples to match majority
-train_df = pandas.concat([X_train, y_train], axis=1)
+train_df = pd.concat([X_train, y_train], axis=1)
 majority = train_df[train_df["Survived"] == 0]
 minority = train_df[train_df["Survived"] == 1]
 minority_oversampled = minority.sample(n=len(majority), replace=True)
-train_oversampled = pandas.concat([majority, minority_oversampled])
+train_oversampled = pd.concat([majority, minority_oversampled])
 X_train_over = train_oversampled.drop(columns="Survived")
 y_train_over = train_oversampled["Survived"]
 
@@ -54,7 +52,7 @@ print(f"accuracy is {accuracy_score(y_test, y_pred)}")
 
 # Undersampling - reduce majority class samples to match minority
 majority_undersampled = majority.sample(n=len(minority))
-train_undersampled = pandas.concat([majority_undersampled, minority])
+train_undersampled = pd.concat([majority_undersampled, minority])
 X_train_under = train_undersampled.drop(columns="Survived")
 y_train_under = train_undersampled["Survived"]
 

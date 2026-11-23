@@ -4,8 +4,8 @@
 Another example of feature engineering
 """
 
-import numpy
-import pandas
+import numpy as np
+import pandas as pd
 import sklearn.model_selection
 import sklearn.naive_bayes
 import sklearn.neighbors
@@ -23,23 +23,20 @@ f_eng_alone=True
 f_turn_column_sex_into_male_female=True
 f_fillna=True
 
-# Set random seed to get stable results for debugging
-numpy.random.seed(5)
-
 # Fill missing Embarked with most frequent value
-tbl = pandas.read_csv("data/titanic.csv")
+tbl = pd.read_csv("data/titanic.csv")
 
 if f_fillna:
-    tbl.fillna(0, inplace=True)
+    tbl = tbl.fillna(0)
 
 if f_turn_column_sex_into_male_female:
-    tbl["sex_new"]=numpy.where(tbl["Sex"]=="male",1.0,0.0)
-    tbl.drop(["Sex"], axis=1, inplace=True)
+    tbl["sex_new"]=np.where(tbl["Sex"]=="male",1.0,0.0)
+    tbl = tbl.drop(["Sex"], axis=1)
 
 if f_embarked:
     tbl["Embarked"] = tbl["Embarked"].fillna(str(tbl["Embarked"].value_counts().index[0]))
 else:
-    tbl.drop(["Embarked"], axis=1, inplace=True)
+    tbl = tbl.drop(["Embarked"], axis=1)
 
 # Fill missing Fare based on mean ticket price for each Pclass
 if f_fare:
@@ -48,7 +45,7 @@ if f_fare:
         # This 'isinstance' check acts as a type guard for mypy.
         # It confirms that 'item' is a tuple, making it indexable.
         if isinstance(item, tuple):
-            tbl.loc[(tbl["Pclass"] == item[0]) & (tbl["Embarked"] == item[1]) & (tbl["Fare"].isnull()), "Fare"] = fare
+            tbl.loc[(tbl["Pclass"] == item[0]) & (tbl["Embarked"] == item[1]) & (tbl["Fare"].isna()), "Fare"] = fare
 
 # Create and reduce Title column
 if f_title:
@@ -62,7 +59,7 @@ if f_title:
 if f_age and f_title:
     title_age_mean = tbl[tbl["Age"] > 0].groupby("Title")["Age"].mean()
     for title, age in title_age_mean.items():
-        tbl.loc[(tbl["Title"] == title) & (tbl["Age"].isnull()), "Age"] = age
+        tbl.loc[(tbl["Title"] == title) & (tbl["Age"].isna()), "Age"] = age
 
 # Add new features IsAlone
 if f_eng_alone:
@@ -70,7 +67,7 @@ if f_eng_alone:
 
 # Build dummy columns
 if f_dummies:
-    tbl = pandas.get_dummies(tbl, columns=["Pclass", "Embarked", "Title"], drop_first=False)
+    tbl = pd.get_dummies(tbl, columns=["Pclass", "Embarked", "Title"], drop_first=False)
 
 # Drop extra columns
 if f_drop:
@@ -86,10 +83,10 @@ if f_nor:
 X = tbl.drop(["Survived"], axis=1)
 Y = tbl[["Survived"]]
 
-X_train, X_test, Y_train, Y_test = sklearn.model_selection.train_test_split(X, Y)
+X_train, X_test, Y_train, Y_test = sklearn.model_selection.train_test_split(X, Y, random_state=5)
 
-tree_classifier = sklearn.tree.DecisionTreeClassifier(max_depth=15)
-tree_classifier.fit(X_train, Y_train.values.ravel())
+tree_classifier = sklearn.tree.DecisionTreeClassifier(max_depth=15, random_state=5)
+tree_classifier.fit(X_train, Y_train.to_numpy().ravel())
 score_train = tree_classifier.score(X_train, Y_train)
 score_test = tree_classifier.score(X_test, Y_test)
 print(f"Decision Tree Train (depth={15}): {score_train}, Test: {score_test}")

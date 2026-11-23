@@ -18,8 +18,8 @@ def fit_and_score(x: pd.DataFrame, y: pd.Series) -> float:
 
 def main() -> None:
     df = pd.read_csv("data/titanic.csv")
-    df.fillna(0, inplace=True)
-    df.drop(["Name", "Embarked", "Cabin", "Ticket"], axis=1, inplace=True)
+    df = df.fillna(0)
+    df = df.drop(["Name", "Embarked", "Cabin", "Ticket"], axis=1)
     y = df["Survived"]
     x = pd.get_dummies(df.drop("Survived", axis=1))
 

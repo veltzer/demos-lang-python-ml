@@ -7,14 +7,12 @@ for an algorithm that needs normalized data (e.g. KNN).
 
 import random
 
-import numpy
-import pandas
+import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
 random.seed(0)
-numpy.random.seed(0)
 
-df = pandas.read_csv("data/titanic_numeric.csv")
+df = pd.read_csv("data/titanic_numeric.csv")
 
 scaler = StandardScaler()
 cols_to_scale = df.columns.drop("Survived")

@@ -10,13 +10,11 @@ one of them and reduce dimensionality.
 
 import random
 
-import numpy
-import pandas
+import pandas as pd
 
 random.seed(0)
-numpy.random.seed(0)
 
-df = pandas.read_csv("data/titanic_normalized.csv")
+df = pd.read_csv("data/titanic_normalized.csv")
 
 # y = target column
 y = df["Survived"]

@@ -4,18 +4,16 @@
 Unsupervised learning using the k nearest neighbour algorithm
 """
 
-import numpy.random
-import pandas
+import pandas as pd
 import sklearn.model_selection
 import sklearn.neighbors
 
 # always get the same results...
-numpy.random.seed(5)
 
-tbl = pandas.read_csv("data/titanic.csv")
+tbl = pd.read_csv("data/titanic.csv")
 print(tbl)
 for col in tbl.columns:
-    tbl[col] = tbl[col].fillna(0 if pandas.api.types.is_numeric_dtype(tbl[col]) else "")
+    tbl[col] = tbl[col].fillna(0 if pd.api.types.is_numeric_dtype(tbl[col]) else "")
 
 X = tbl.drop(["Survived"], axis=1,)
 Y = tbl[["Survived"]]
@@ -24,12 +22,12 @@ print(type(Y), type(X))
 # turn all columns numeric, if a column is not numeric replace it with 0/1 columns
 # that represent it's various states. Could produce a lot of columns...
 print(len(X.columns))
-X = pandas.get_dummies(X)
+X = pd.get_dummies(X)
 print(len(X.columns))
 
 # split the data to train and test
-X_train, X_test, Y_train, Y_test = sklearn.model_selection.train_test_split(X, Y)
-YY = Y_train.values.ravel()
+X_train, X_test, Y_train, Y_test = sklearn.model_selection.train_test_split(X, Y, random_state=5)
+YY = Y_train.to_numpy().ravel()
 print(type(YY))
 
 alg = sklearn.neighbors.KNeighborsClassifier(n_neighbors=1)
