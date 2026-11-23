@@ -25,4 +25,5 @@ fi
 echo "Extracting ${WANT} ..."
 unzip -o "${ZIP}" "${WANT}"
 rm -f "${ZIP}"
-echo "Done: $(du -h "${WANT}" | cut -f1) ${WANT}"
+size_line=$(du -h "${WANT}")
+echo "Done: ${size_line%%[[:space:]]*} ${WANT}"
