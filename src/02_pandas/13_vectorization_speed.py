@@ -30,7 +30,7 @@ def main() -> None:
 
     def loop() -> None:
         for i in range(df3.shape[0]):
-            df3.iloc[i, 0] = abs(float(cast(float, df3.iloc[i, 0])))
+            df3.iloc[i, 0] = abs(float(cast("float", df3.iloc[i, 0])))
 
     time_it("python for-loop", loop)
 
