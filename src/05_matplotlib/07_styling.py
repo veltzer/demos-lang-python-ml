@@ -12,6 +12,6 @@ plt.plot(x, x ** 1.5, color="green", linestyle="--", marker="o", label="x^1.5")
 plt.plot(x, x ** 2, color="blue", linestyle=":", marker="^", linewidth=2, label="x^2")
 
 plt.legend()
-plt.grid(True)
+plt.grid(visible=True)
 plt.title("Power-law growth")
 plt.savefig("/tmp/08_styling.png")
