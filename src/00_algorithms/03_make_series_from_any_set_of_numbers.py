@@ -6,7 +6,7 @@ even such that doesn't make sense
 """
 
 
-def fun(x):
+def fun(x: int):
     return (x-2)*(x-3)/2+(x-1)*(x-3)*(-4)+(x-1)*(x-2)*(1979/2)
 
 

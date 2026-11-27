@@ -4,7 +4,7 @@
 An example of how to do a function that does not follow any rule
 """
 
-def my_function(x):
+def my_function(x: int):
     if x==1:
         return 1
     if x==2:

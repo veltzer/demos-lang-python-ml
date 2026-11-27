@@ -3,13 +3,16 @@
 """Solution to exercise 14: compare vectorized vs apply vs Python-loop timings."""
 
 import time
-from typing import cast
+from typing import TYPE_CHECKING, cast
 
 import numpy as np
 import pandas as pd
 
+if TYPE_CHECKING:
+    from collections.abc import Callable
 
-def time_it(label: str, func) -> None:
+
+def time_it(label: str, func: Callable[[], object]) -> None:
     t0 = time.perf_counter()
     func()
     t1 = time.perf_counter()

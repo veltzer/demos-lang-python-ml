@@ -23,7 +23,7 @@ tbl=pd.get_dummies(tbl)
 X = tbl.drop(["Survived"], axis=1)
 Y = tbl[["Survived"]]
 
-def run_it(title):
+def run_it(title: str) -> None:
     print(f"number of columns is {len(X.columns)}")
     score: float = 0
     num_runs=40

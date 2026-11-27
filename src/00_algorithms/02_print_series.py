@@ -9,7 +9,7 @@ Example that shows that we can complete any series of number with any number
 # f(3) = 9
 # f(4) = ?
 
-def produce_number_alt_2(i):
+def produce_number_alt_2(i: int):
     s=0
     s+=(i-2)*(i-3)*(i-4)*1/(-6)
     s+=(i-1)*(i-3)*(i-4)*4/2
@@ -17,12 +17,12 @@ def produce_number_alt_2(i):
     s+=(i-1)*(i-2)*(i-3)*1979/6
     return s
 
-def produce_number_alt(i):
+def produce_number_alt(i: int):
     if i<5:
         return i*i
     return 1979+i-5
 
-def produce_number(i):
+def produce_number(i: int):
     return i*i
 
 for j in range(1,10):
