@@ -20,7 +20,7 @@ f'(x) ≈ (f(x + dx) - f(x - dx)) / (2 * dx)
 
 Stop when `|f(x)| < precision`.
 
-### Tasks
+### Tasks of Part 1
 
 1. Implement `newton_raphson_root(f, initial_guess=1.0, max_iterations=1000, dx=0.001,
    precision=0.001)`. Return the converged `x`, or `None` if `max_iterations` was
@@ -41,7 +41,7 @@ x_{n+1} = x_n - f'(x_n) / f''(x_n)
 
 Stop when `|f'(x)| < precision`.
 
-### Tasks
+### Tasks of Part 2
 
 1. Implement `newton_raphson_min(f, initial_guess=1.0, max_iterations=1000, dx=0.001,
    precision=0.001)` using numerical first and second derivatives.
