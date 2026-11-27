@@ -18,7 +18,7 @@ tbl['Sex'] = tbl['Sex'].replace('male', 0).replace('female', 1)
 i_num = 20
 score: float = 0
 for _ in range(i_num):
-    #X = tbl.drop(['Survived', 'PassengerId', 'Name', 'Ticket', 'Cabin'], axis=1) #score about 0.77
+    #X = tbl.drop(['Survived', 'PassengerId', 'Name', 'Ticket', 'Cabin'], axis=1) #score about 0.77  # noqa: ERA001  teaching: kept in the comment for the reader
     X = tbl.drop(['Survived', 'PassengerId', 'Name', 'Cabin'], axis=1) #score about 0.82
     Y = tbl['Survived']
 

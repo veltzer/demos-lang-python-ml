@@ -8,9 +8,9 @@ import random
 
 import pandas as pd
 
-# from sklearn.linear_model import LogisticRegression
-# from sklearn.neighbors import KNeighborsClassifier
-# from sklearn.svm import SVC
+# from sklearn.linear_model import LogisticRegression  # noqa: ERA001  teaching: kept in the comment for the reader
+# from sklearn.neighbors import KNeighborsClassifier  # noqa: ERA001  teaching: kept in the comment for the reader
+# from sklearn.svm import SVC  # noqa: ERA001  teaching: kept in the comment for the reader
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 

@@ -20,13 +20,13 @@ X = X.drop(["PassengerId","Name","Cabin", "Ticket"], axis=1,)
 # turn all columns numeric, if a column is not numeric replace it with 0/1 columns
 # that represent it's various states. Could produce a lot of columns...
 X = pd.get_dummies(X)
-# print(X.shape)
-# print(X)
+# print(X.shape)  # noqa: ERA001  teaching: kept in the comment for the reader
+# print(X)  # noqa: ERA001  teaching: kept in the comment for the reader
 
 # split the data to train and test
 X_train, X_test, Y_train, Y_test = sklearn.model_selection.train_test_split(X, Y)
 
-# alg = sklearn.tree.DecisionTreeClassifier(max_depth=7)
+# alg = sklearn.tree.DecisionTreeClassifier(max_depth=7)  # noqa: ERA001  teaching: kept in the comment for the reader
 alg = sklearn.tree.DecisionTreeClassifier(min_samples_leaf=5)
 alg.fit(X_train, Y_train)
 

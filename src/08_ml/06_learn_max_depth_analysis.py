@@ -21,7 +21,7 @@ for i in range(2, 40):
         X = pd.get_dummies(X)
         Y = pd.get_dummies(Y)
         X_train, X_test, y_train, y_test = train_test_split(X, Y)
-        # alg = DecisionTreeClassifier(max_depth=i)
+        # alg = DecisionTreeClassifier(max_depth=i)  # noqa: ERA001  teaching: kept in the comment for the reader
         alg = DecisionTreeClassifier(max_leaf_nodes=i)
         alg.fit(X_train, y_train)
         score += float(alg.score(X_test, y_test))

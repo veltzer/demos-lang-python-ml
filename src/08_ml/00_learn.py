@@ -14,22 +14,22 @@ import sklearn.tree
 random.seed(5)
 
 tbl = pd.read_csv("data/titanic.csv")
-# tbl.fillna(0, inplace=True)
+# tbl.fillna(0, inplace=True)  # noqa: ERA001  teaching: kept in the comment for the reader
 
 X = tbl.drop(["Survived"], axis=1,)
 Y = tbl[["Survived"]]
 
 # turn all columns numeric, if a column is not numeric replace it with 0/1 columns
 # that represent it's various states. Could produce a lot of columns...
-# print(X)
+# print(X)  # noqa: ERA001  teaching: kept in the comment for the reader
 X = pd.get_dummies(X)
-# print(X)
+# print(X)  # noqa: ERA001  teaching: kept in the comment for the reader
 
 # split the data to train and test
 X_train, X_test, Y_train, Y_test = sklearn.model_selection.train_test_split(X, Y, random_state=5)
 
 alg = sklearn.tree.DecisionTreeClassifier(max_depth=4)
-# alg = sklearn.ensemble.RandomForestClassifier()
+# alg = sklearn.ensemble.RandomForestClassifier()  # noqa: ERA001  teaching: kept in the comment for the reader
 alg.fit(X_train, Y_train)
 
 score_test = alg.score(X_test, Y_test)

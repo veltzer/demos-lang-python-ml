@@ -77,8 +77,8 @@ if f_drop:
 if f_nor:
     tbl = ((tbl - tbl.min()) / (tbl.max() - tbl.min()))
 
-# print(tbl.to_string())
-# print(tbl.corr().to_string())
+# print(tbl.to_string())  # noqa: ERA001  teaching: kept in the comment for the reader
+# print(tbl.corr().to_string())  # noqa: ERA001  teaching: kept in the comment for the reader
 
 X = tbl.drop(["Survived"], axis=1)
 Y = tbl[["Survived"]]

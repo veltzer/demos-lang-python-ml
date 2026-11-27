@@ -9,8 +9,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 
 o_tbl = pd.read_csv("data/titanic.csv")
-#o_tbl['Age'].fillna(o_tbl['Age'].mean(), inplace=True)
-#o_tbl['Cabin'].fillna(0, inplace=True)
+#o_tbl['Age'].fillna(o_tbl['Age'].mean(), inplace=True)  # noqa: ERA001  teaching: kept in the comment for the reader
+#o_tbl['Cabin'].fillna(0, inplace=True)  # noqa: ERA001  teaching: kept in the comment for the reader
 o_tbl['Embarked'] = o_tbl['Embarked'].fillna('S')
 o_tbl['Sex'] = o_tbl['Sex'].replace('male', 0).replace('female', 1)
 o_tbl = o_tbl.fillna(0)
@@ -38,12 +38,12 @@ run_it("before fe")
 
 # IDEA 1: add column with number of people with the same last name
 o_tbl['LastName'] = o_tbl['Name'].str.split(',').str[0]
-#X['count_lastName'] = o_tbl.groupby('LastName')['LastName'].transform('count')
-#X['Relatives'] = o_tbl['SibSp'] + o_tbl['Parch']
-#X['IsAlone'] = np.where(X['Relatives']>0,0,1)
-#X['Kids'] = o_tbl.apply(lambda row: row['Name'].find('Master', 0) != -1 or row['Name'].find('Miss', 0) != -1, axis=1)
-#X['Kids_int'] = X.apply(lambda row: int(row['Kids'])+1, axis=1)
-#X['Royalty'] = o_tbl.apply(lambda row: row['Name'].find('Dr.', 0) != -1 or row['Name'].find('Sir.', 0) != -1, axis=1)
-#X['Royalty_int'] = X.apply(lambda row: int(row['Royalty'])+1, axis=1)
-#X['count_Embarked'] = o_tbl.groupby('Embarked')['Embarked'].transform('count')
+#X['count_lastName'] = o_tbl.groupby('LastName')['LastName'].transform('count')  # noqa: ERA001  teaching: kept in the comment for the reader
+#X['Relatives'] = o_tbl['SibSp'] + o_tbl['Parch']  # noqa: ERA001  teaching: kept in the comment for the reader
+#X['IsAlone'] = np.where(X['Relatives']>0,0,1)  # noqa: ERA001  teaching: kept in the comment for the reader
+#X['Kids'] = o_tbl.apply(lambda row: row['Name'].find('Master', 0) != -1 or row['Name'].find('Miss', 0) != -1, axis=1)  # noqa: ERA001  teaching: kept in the comment for the reader
+#X['Kids_int'] = X.apply(lambda row: int(row['Kids'])+1, axis=1)  # noqa: ERA001  teaching: kept in the comment for the reader
+#X['Royalty'] = o_tbl.apply(lambda row: row['Name'].find('Dr.', 0) != -1 or row['Name'].find('Sir.', 0) != -1, axis=1)  # noqa: ERA001  teaching: kept in the comment for the reader
+#X['Royalty_int'] = X.apply(lambda row: int(row['Royalty'])+1, axis=1)  # noqa: ERA001  teaching: kept in the comment for the reader
+#X['count_Embarked'] = o_tbl.groupby('Embarked')['Embarked'].transform('count')  # noqa: ERA001  teaching: kept in the comment for the reader
 run_it("after fe")
