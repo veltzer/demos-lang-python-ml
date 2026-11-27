@@ -14,7 +14,7 @@ Two standard fixes:
 Each has its trade-off:
 
 | | Pros | Cons |
-|---|---|---|
+| --- | --- | --- |
 | Oversampling | uses all the data | duplicates inflate apparent training accuracy |
 | Undersampling | smaller, balanced set | discards potentially useful data |
 

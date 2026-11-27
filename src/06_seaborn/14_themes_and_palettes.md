@@ -22,12 +22,12 @@ df = pd.DataFrame({
 For each combination below, set the theme + palette, then draw a scatter on the
 corresponding axes:
 
-| subplot       | theme         | palette       |
-| ------------- | ------------- | ------------- |
-| top-left      | `"darkgrid"`  | `"deep"`      |
-| top-right     | `"whitegrid"` | `"pastel"`    |
-| bottom-left   | `"ticks"`     | `"colorblind"`|
-| bottom-right  | `"white"`     | `"muted"`     |
+| subplot      | theme         | palette        |
+| ------------ | ------------- | -------------- |
+| top-left     | `"darkgrid"`  | `"deep"`       |
+| top-right    | `"whitegrid"` | `"pastel"`     |
+| bottom-left  | `"ticks"`     | `"colorblind"` |
+| bottom-right | `"white"`     | `"muted"`      |
 
 Hint: `sns.set_theme(style=...)` resets matplotlib's rcParams globally — call it before
 each `sns.scatterplot(..., ax=axes[i, j])`.

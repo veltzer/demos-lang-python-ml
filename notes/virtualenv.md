@@ -6,15 +6,15 @@ environment so each project has its own isolated set of installed packages.
 
 ## The packages we need
 
-| package         | what for             |
-| --------------- | -------------------- |
-| `numpy`         | numeric arrays       |
-| `pandas`        | DataFrames           |
-| `matplotlib`    | static plots         |
-| `seaborn`       | statistical plots    |
-| `plotly`        | interactive plots    |
-| `scikit-learn`  | ML algorithms        |
-| `psutil`        | memory measurements  |
+| package        | what for            |
+| -------------- | ------------------- |
+| `numpy`        | numeric arrays      |
+| `pandas`       | DataFrames          |
+| `matplotlib`   | static plots        |
+| `seaborn`      | statistical plots   |
+| `plotly`       | interactive plots   |
+| `scikit-learn` | ML algorithms       |
+| `psutil`       | memory measurements |
 
 ## Linux
 

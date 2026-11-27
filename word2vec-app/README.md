@@ -51,8 +51,8 @@ different GloVe-format file (e.g. `glove.6B.300d.txt`).
 
 ## Files
 
-| file              | purpose                                            |
-|-------------------|----------------------------------------------------|
-| `word2vec_app.py` | the application (CLI + `Embeddings` class)         |
-| `download.sh`     | fetches and unpacks the 100d GloVe vectors         |
-| `README.md`       | this file                                          |
+| file              | purpose                                    |
+| ----------------- | ------------------------------------------ |
+| `word2vec_app.py` | the application (CLI + `Embeddings` class) |
+| `download.sh`     | fetches and unpacks the 100d GloVe vectors |
+| `README.md`       | this file                                  |
